@@ -3251,6 +3251,17 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
+[node name="LevelLabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+text = "Level: 1"
+horizontal_alignment = 2
+
+[connection signal="area_entered" from="gameover" to="player" method="_on_gameover_area_entered"]
 [connection signal="timeout" from="zsp/zsp" to="player" method="_on_zsp_timeout"]
 [connection signal="button_up" from="Control/sfseed" to="player" method="_on_sfseed_button_up"]
 [connection signal="button_up" from="Control/psseed" to="player" method="_on_psseed_button_up"]

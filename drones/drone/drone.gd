@@ -6,13 +6,17 @@ var translation = Vector3(-0.005,0,0)
 var gbody
 var arm_can_detach = true
 var head_can_detach = true
-var arm = preload("res://zombies/zombiearm.tscn")
-var head = preload("res://zombies/zombie/zombiehead.tscn")
+var arm = preload("res://drones/dronearm.tscn")
+var head = preload("res://drones/drone/dronehead.tscn")
 var chilled = false
 
 @onready var ap = $AnimationPlayer
 
+var counter = 0
 func _physics_process(delta):
+	counter += 1
+	if counter == 1:
+		translation = Vector3(0,0.07,0)
 	if health <= 50:
 		armdetach()
 	if health <= 0:
