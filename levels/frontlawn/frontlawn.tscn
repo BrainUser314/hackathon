@@ -40,14 +40,14 @@
 [ext_resource type="Texture2D" uid="uid://bdxrnc8c2v5r1" path="res://ui/seed/psseed/psseedpressed.png" id="38_agny6"]
 [ext_resource type="Texture2D" uid="uid://jt5dkgh8orxp" path="res://ui/seed/psseed/psseedhover.png" id="39_blmup"]
 [ext_resource type="Texture2D" uid="uid://cbif07na5b7nw" path="res://ui/seed/psseed/psseeddisabled.png" id="40_7vege"]
-[ext_resource type="Texture2D" uid="uid://clq7ie2kw4e2v" path="res://ui/seed/rpseed/rpseednormal.png" id="41_imm2n"]
-[ext_resource type="Texture2D" uid="uid://o4ojsvnciqa0" path="res://ui/seed/rpseed/rpseedpressed.png" id="42_mq2qc"]
-[ext_resource type="Texture2D" uid="uid://cwqjijua3k5rb" path="res://ui/seed/rpseed/rpseedhover.png" id="43_bn0sc"]
-[ext_resource type="Texture2D" uid="uid://b7a0gknxgemqp" path="res://ui/seed/rpseed/rpseeddisabled.png" id="44_e2gi2"]
-[ext_resource type="Texture2D" uid="uid://j0tw4txhpssd" path="res://ui/seed/spseed/spseednormal.png" id="45_rn2b0"]
-[ext_resource type="Texture2D" uid="uid://1vfiv4sp4n6s" path="res://ui/seed/spseed/spseedpressed.png" id="46_dds8k"]
-[ext_resource type="Texture2D" uid="uid://cx8sejku64pfb" path="res://ui/seed/spseed/spseedhover.png" id="47_5p7xl"]
-[ext_resource type="Texture2D" uid="uid://drqku1t21jwnh" path="res://ui/seed/spseed/spseeddisabled.png" id="48_c1lkb"]
+[ext_resource type="Texture2D" uid="uid://bp3y232finekq" path="res://ui/seed/rpseed/rpseednormal.png" id="41_imm2n"]
+[ext_resource type="Texture2D" uid="uid://v11si74vdkc4" path="res://ui/seed/rpseed/rpseedpressed.png" id="42_mq2qc"]
+[ext_resource type="Texture2D" uid="uid://dpligxmwaxkl1" path="res://ui/seed/rpseed/rpseedhover.png" id="43_bn0sc"]
+[ext_resource type="Texture2D" uid="uid://de75v38riagkd" path="res://ui/seed/rpseed/rpseeddisabled.png" id="44_e2gi2"]
+[ext_resource type="Texture2D" uid="uid://b8kewlxjdtftj" path="res://ui/seed/spseed/spseednormal.png" id="45_rn2b0"]
+[ext_resource type="Texture2D" uid="uid://bvljra5s55l4o" path="res://ui/seed/spseed/spseedpressed.png" id="46_dds8k"]
+[ext_resource type="Texture2D" uid="uid://bh1ythmpsnowi" path="res://ui/seed/spseed/spseedhover.png" id="47_5p7xl"]
+[ext_resource type="Texture2D" uid="uid://blmv7vxmpyv1c" path="res://ui/seed/spseed/spseeddisabled.png" id="48_c1lkb"]
 [ext_resource type="Texture2D" uid="uid://cuflwmdccokfd" path="res://ui/seed/cseed/cseednormal.png" id="49_qcmsh"]
 [ext_resource type="Texture2D" uid="uid://drso48v3shvoj" path="res://ui/seed/cseed/cseedpressed.png" id="50_nwjlt"]
 [ext_resource type="Texture2D" uid="uid://cktss0d3qkwc8" path="res://ui/seed/cseed/cseedhover.png" id="51_u4lcn"]
@@ -2997,8 +2997,8 @@ libraries = {
 [node name="rpseed" type="TextureButton" parent="Control"]
 layout_mode = 2
 offset_left = 522.0
-offset_right = 618.0
-offset_bottom = 128.0
+offset_right = 622.0
+offset_bottom = 132.0
 tooltip_text = "Repeater
 peashooter but better :)"
 keep_pressed_outside = true
@@ -3015,8 +3015,8 @@ libraries = {
 [node name="spseed" type="TextureButton" parent="Control"]
 layout_mode = 2
 offset_left = 622.0
-offset_right = 718.0
-offset_bottom = 128.0
+offset_right = 733.0
+offset_bottom = 141.0
 tooltip_text = "Snow Peashooter
 Peashooter but snow"
 keep_pressed_outside = true
