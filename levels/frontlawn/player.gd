@@ -30,9 +30,7 @@ func _physics_process(delta):
 	var query = PhysicsRayQueryParameters3D.create(origin, end)
 	query.collide_with_areas = false
 	result = space_state.intersect_ray(query)
-	
 
-	
 	if result:
 		if Input.is_action_just_pressed("leftclick") and result.collider.is_in_group("normalsun"):
 			sun += 25
@@ -113,7 +111,8 @@ func _on_shovel_button_up():
 
 func _on_zsp_timeout():
 	var randomIndex = randi() % zsp.size()
-	var spawnPosition = zsp[randomIndex].global_transform.origin
+	#var spawnPosition = zsp[randomIndex].global_transform.origin
+	var spawnPosition = zsp[0].global_transform.origin
 	var z1a = z1.instantiate()
 	z1a.position = spawnPosition
 	get_tree().get_root().add_child(z1a)
