@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b3r86212gkjrc" path="res://zombies/zombie/zombie_3.png" id="4_d45wg"]
 [ext_resource type="Texture2D" uid="uid://dknmqi5xvrdrq" path="res://zombies/zombie/zombie_4.png" id="5_t8cdh"]
 [ext_resource type="Texture2D" uid="uid://b636slyf733cd" path="res://zombies/zombie/zombie_1.png" id="6_qupo5"]
-[ext_resource type="Texture2D" uid="uid://1r7e25rgshb7" path="res://zombies/zombie/zombie_0.png" id="7_syr1r"]
+[ext_resource type="Texture2D" uid="uid://brfvr6mhe4uxa" path="res://drones/drone/drone_0.png" id="7_v56cp"]
 [ext_resource type="Texture2D" uid="uid://bgf8x8d11epoo" path="res://zombies/zombie/zombie_2.png" id="8_s8m8w"]
 [ext_resource type="Texture2D" uid="uid://bnwjl3roae02n" path="res://zombies/zombie/zombie_7.png" id="9_w1o66"]
 [ext_resource type="Texture2D" uid="uid://npphjkyyx1w5" path="res://zombies/zombie/zombie_9.png" id="10_ndei5"]
@@ -234,7 +234,7 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("7_syr1r")
+albedo_texture = ExtResource("7_v56cp")
 texture_filter = 0
 texture_repeat = false
 grow_amount = 3.556
@@ -273,7 +273,7 @@ shadow_mesh = SubResource("ArrayMesh_3gbrj")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rhhc1"]
 transparency = 4
-albedo_texture = ExtResource("7_syr1r")
+albedo_texture = ExtResource("7_v56cp")
 texture_filter = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y0ef6"]
@@ -1271,6 +1271,7 @@ transform = Transform3D(-2.5, 0, 3.77489e-07, 0, 2.5, 0, -3.77489e-07, 0, -2.5, 
 
 [node name="lega" type="Node3D" parent="drone"]
 transform = Transform3D(1, 2.38419e-08, -2.84217e-14, -2.38419e-08, 1, 7.57851e-16, 2.84217e-14, -7.5785e-16, 1, -0.08, 0.28, 1.20797e-08)
+visible = false
 
 [node name="lega" type="MeshInstance3D" parent="drone/lega"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04, -0.28, -6.03983e-09)
@@ -1287,6 +1288,7 @@ skeleton = NodePath("")
 
 [node name="leg2a" type="Node3D" parent="drone"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08, 0.28, -1.20797e-08)
+visible = false
 
 [node name="leg2a" type="MeshInstance3D" parent="drone/leg2a"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12, -0.28, 1.81195e-08)
@@ -1306,6 +1308,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04, 0.44, -6.03984e-09)
 
 [node name="body" type="MeshInstance3D" parent="drone/body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04, -0.44, 6.03983e-09)
+visible = false
 mesh = SubResource("ArrayMesh_3r7mh")
 skeleton = NodePath("")
 
@@ -1320,6 +1323,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rhhc1")
 
 [node name="arma" type="Node3D" parent="drone/body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04, 0.16, 6.03983e-09)
+visible = false
 
 [node name="arma" type="MeshInstance3D" parent="drone/body/arma"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.72529e-09, -0.6, 8.88178e-16)
@@ -1336,17 +1340,21 @@ skeleton = NodePath("")
 
 [node name="arm2a" type="Node3D" parent="drone/body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08, 0.16, -1.20797e-08)
+visible = false
 
 [node name="arm2a" type="MeshInstance3D" parent="drone/body/arm2a"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12, -0.6, 1.81195e-08)
+visible = false
 mesh = SubResource("ArrayMesh_685ue")
 skeleton = NodePath("")
 
 [node name="arm2b" type="Node3D" parent="drone/body/arm2a"]
 transform = Transform3D(1, 1.02997e-21, 1.42109e-14, -1.02997e-21, 1, -4.26326e-15, -1.42109e-14, 4.26326e-15, 1, 7.45058e-09, -0.2, -1.77636e-15)
+visible = false
 
 [node name="arm2b" type="MeshInstance3D" parent="drone/body/arm2a/arm2b"]
 transform = Transform3D(1, 4.29156e-22, 0, 1.02997e-21, 1, -2.84216e-16, 1.42109e-14, -4.26326e-15, 1, -0.12, -0.4, 1.81195e-08)
+visible = false
 mesh = SubResource("ArrayMesh_g5qh0")
 skeleton = NodePath("")
 

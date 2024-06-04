@@ -2,14 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4kji7uyynqxl"
+uid="uid://brfvr6mhe4uxa"
 path.s3tc="res://.godot/imported/drone_0.png-b698348946cab82efae26ae7fb94dad7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "92a2c45bca70ccb6fe90cd598227622d"
 }
 
 [deps]
