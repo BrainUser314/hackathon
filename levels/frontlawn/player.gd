@@ -11,14 +11,24 @@ var sp = preload("res://plants/snowpeashooter/snowpeashooter.tscn")
 var c = preload("res://plants/chomper/chomper.tscn")
 var cb = preload("res://plants/cherrybomb/cherrybomb.tscn")
 var z1 = preload("res://zombies/zombie/zombie.tscn")
+var drone = preload("res://drones/drone/drone.tscn")
 var fallingsun = preload("res://projectiles/fallingsun/fallingsun.tscn")
 
+var globalTime = 0
+var level = 1
+var levelDuration = 5
 const raylength = 1000
 
+@onready var level_label = $"../LevelLabel"
 @onready var zsp = [$"../zsp/Marker3D",$"../zsp/Marker3D2",$"../zsp/Marker3D3",$"../zsp/Marker3D4",$"../zsp/Marker3D5",$"../zsp/Marker3D6",$"../zsp/Marker3D7",$"../zsp/Marker3D8",$"../zsp/Marker3D9",$"../zsp/Marker3D10"]
 @onready var ts = $"../Tileselect"
 
 func _physics_process(delta):
+	globalTime += delta
+	if globalTime >= levelDuration*level:
+		print_debug(level)
+		level+=1
+		level_label.text = "Level: " + str(level)
 	if Input.is_action_just_pressed("exit"):
 		get_tree().quit()
 	$"../Control/suntexture/sun".text = str(sun)
@@ -30,6 +40,8 @@ func _physics_process(delta):
 	var query = PhysicsRayQueryParameters3D.create(origin, end)
 	query.collide_with_areas = false
 	result = space_state.intersect_ray(query)
+	
+	
 	if result:
 		if Input.is_action_just_pressed("leftclick") and result.collider.is_in_group("normalsun"):
 			sun += 25
@@ -111,13 +123,24 @@ func _on_shovel_button_up():
 func _on_zsp_timeout():
 	var randomIndex = randi() % zsp.size()
 	var spawnPosition = zsp[randomIndex].global_transform.origin
+	
+	var randomIndexDrone = randi() % zsp.size()
+	var spawnPositionDrone = zsp[randomIndexDrone].global_transform.origin
+	
+	var drone_instance = drone.instantiate()
+	drone_instance.position = spawnPositionDrone
+	get_tree().get_root().add_child(drone_instance)
+	
 	var z1a = z1.instantiate()
 	z1a.position = spawnPosition
 	get_tree().get_root().add_child(z1a)
+	
+
+	
 	randomize_timer()
 
 func randomize_timer():
-	var randomInterval = randi_range(1.0, 35.0)
+	var randomInterval = randi_range(1.0, 35.0 - level * 35/100)
 	$"../zsp/zsp".wait_time = randomInterval
 
 func _on_sspt_timeout():
@@ -127,5 +150,6 @@ func _on_sspt_timeout():
 
 func _on_gameover_area_entered(area):
 	if area.is_in_group("zombie"):
+		print_debug("fsdfsdf")
 		get_tree().quit()
 		print("Game Over, Game over screen not yet added")
