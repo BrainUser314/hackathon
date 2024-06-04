@@ -61,6 +61,7 @@
 [ext_resource type="Texture2D" uid="uid://bypmh4vnwfsil" path="res://ui/shovelhover.png" id="67_nh0pe"]
 [ext_resource type="Texture2D" uid="uid://b6bbtukioklgc" path="res://ui/sunui.png" id="68_2gsuf"]
 [ext_resource type="FontFile" uid="uid://bg05qmubyqhht" path="res://ui/PixelOperator.ttf" id="69_vxtha"]
+[ext_resource type="Texture2D" uid="uid://i065jubf8p8q" path="res://projectiles/gameover/gameover.png" id="70_x5uyj"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_xus7m"]
 data = PackedVector3Array(5, -2.5, 0, -5, -2.5, 0, 5, 2.5, 0, -5, -2.5, 0, -5, 2.5, 0, 5, 2.5, 0)
@@ -3118,3 +3119,4 @@ horizontal_alignment = 2
 [connection signal="button_up" from="Control/cseed" to="player" method="_on_cseed_button_up"]
 [connection signal="button_up" from="Control/wnseed" to="player" method="_on_wnseed_button_up"]
 [connection signal="button_up" from="Control/shovel" to="player" method="_on_shovel_button_up"]
+[connection signal="timeout" from="game_over_timer" to="player" method="_on_game_over_timer_timeout"]
