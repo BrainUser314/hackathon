@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bgoooiihmmbyo"]
 
 [ext_resource type="Script" path="res://zombies/zombie/zombiehead.gd" id="1_uisn4"]
-[ext_resource type="Texture2D" uid="uid://1r7e25rgshb7" path="res://zombies/zombie/zombie_0.png" id="2_ogpdv"]
+[ext_resource type="Texture2D" uid="uid://brfvr6mhe4uxa" path="res://drones/drone/drone_0.png" id="2_hby36"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krgg3"]
 resource_name = "material_0"
@@ -9,7 +9,7 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("2_ogpdv")
+albedo_texture = ExtResource("2_hby36")
 texture_filter = 0
 texture_repeat = false
 
