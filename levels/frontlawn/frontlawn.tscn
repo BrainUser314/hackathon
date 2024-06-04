@@ -1,4 +1,4 @@
-[gd_scene load_steps=239 format=3 uid="uid://dbw6jopdqhemt"]
+[gd_scene load_steps=240 format=3 uid="uid://dbw6jopdqhemt"]
 
 [ext_resource type="Script" path="res://levels/frontlawn/player.gd" id="1_k62ax"]
 [ext_resource type="PackedScene" uid="uid://6767ut83chgm" path="res://ui/tileselect/tileselect.tscn" id="2_vdwpm"]
@@ -69,6 +69,7 @@
 [ext_resource type="Texture2D" uid="uid://bypmh4vnwfsil" path="res://ui/shovelhover.png" id="67_nh0pe"]
 [ext_resource type="Texture2D" uid="uid://b6bbtukioklgc" path="res://ui/sunui.png" id="68_2gsuf"]
 [ext_resource type="FontFile" uid="uid://bg05qmubyqhht" path="res://ui/PixelOperator.ttf" id="69_vxtha"]
+[ext_resource type="Texture2D" uid="uid://i065jubf8p8q" path="res://projectiles/gameover/gameover.png" id="70_x5uyj"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_xus7m"]
 data = PackedVector3Array(5, -2.5, 0, -5, -2.5, 0, 5, 2.5, 0, -5, -2.5, 0, -5, 2.5, 0, 5, 2.5, 0)
@@ -3251,6 +3252,15 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
+[node name="gameover_logo" type="Sprite3D" parent="."]
+transform = Transform3D(0.999976, 0.00691145, 0, -0.00691145, 0.999976, 0, 0, 0, 1, 0.0360392, 2.96696, -0.129952)
+visible = false
+pixel_size = 0.004
+texture = ExtResource("70_x5uyj")
+
+[node name="game_over_timer" type="Timer" parent="."]
+wait_time = 3.0
+
 [connection signal="area_entered" from="gameover" to="player" method="_on_gameover_area_entered"]
 [connection signal="timeout" from="zsp/zsp" to="player" method="_on_zsp_timeout"]
 [connection signal="button_up" from="Control/sfseed" to="player" method="_on_sfseed_button_up"]
@@ -3262,3 +3272,4 @@ autowrap_mode = 2
 [connection signal="button_up" from="Control/pm" to="player" method="_on_pm_button_up"]
 [connection signal="button_up" from="Control/cbseed" to="player" method="_on_cbseed_button_up"]
 [connection signal="button_up" from="Control/shovel" to="player" method="_on_shovel_button_up"]
+[connection signal="timeout" from="game_over_timer" to="player" method="_on_game_over_timer_timeout"]

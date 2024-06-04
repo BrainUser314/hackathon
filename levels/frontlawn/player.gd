@@ -12,6 +12,7 @@ var c = preload("res://plants/chomper/chomper.tscn")
 var cb = preload("res://plants/cherrybomb/cherrybomb.tscn")
 var z1 = preload("res://zombies/zombie/zombie.tscn")
 var fallingsun = preload("res://projectiles/fallingsun/fallingsun.tscn")
+var gameover = preload("res://projectiles/gameover/gameover.tscn")
 
 const raylength = 1000
 
@@ -128,6 +129,15 @@ func _on_sspt_timeout():
 	get_tree().get_root().add_child(fallingsuna)
 
 func _on_gameover_area_entered(area):
+	#var go = gameover.instantiate()
 	if area.is_in_group("zombie"):
-		get_tree().quit()
+		#get_tree().get_root().add_child(go)
+		$"../gameover_logo".visible = true
+		#$"../zsp/zsp".wait_time = 10
+		#get_tree().quit()
+		$"../game_over_timer".start()
 		print("Game Over, Game over screen not yet added")
+
+
+func _on_game_over_timer_timeout():
+		get_tree().quit()
