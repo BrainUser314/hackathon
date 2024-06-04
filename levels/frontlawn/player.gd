@@ -30,6 +30,9 @@ func _physics_process(delta):
 	var query = PhysicsRayQueryParameters3D.create(origin, end)
 	query.collide_with_areas = false
 	result = space_state.intersect_ray(query)
+	
+
+	
 	if result:
 		if Input.is_action_just_pressed("leftclick") and result.collider.is_in_group("normalsun"):
 			sun += 25
