@@ -3111,7 +3111,9 @@ text = "Level: 1"
 horizontal_alignment = 2
 
 [node name="gameover_logo" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.339833, 2.73899, -1.51939)
 visible = false
+pixel_size = 0.004
 texture = ExtResource("62_0vbwg")
 
 [node name="game_over_timer" type="Timer" parent="."]
