@@ -2,12 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dloh8w8dq1thy"
+uid="uid://ds1p6kwlngo10"
 path="res://.godot/imported/snowpeashooter_5.png-eef6ddc9083e3c3038b56fa932b14ae2.ctex"
 metadata={
 "vram_texture": false
 }
-generator_parameters={}
 
 [deps]
 
@@ -32,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

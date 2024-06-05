@@ -3082,9 +3082,10 @@ texture_hover = ExtResource("67_nh0pe")
 
 [node name="suntexture" type="TextureRect" parent="Control"]
 layout_mode = 2
-offset_left = 224.0
-offset_right = 320.0
-offset_bottom = 128.0
+offset_left = 207.0
+offset_top = 6.0
+offset_right = 303.0
+offset_bottom = 134.0
 texture = ExtResource("68_2gsuf")
 stretch_mode = 2
 
