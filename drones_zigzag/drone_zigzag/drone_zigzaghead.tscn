@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bgoooiihmmbyo"]
 
-[ext_resource type="Script" path="res://zombies/zombie/zombiehead.gd" id="1_uisn4"]
-[ext_resource type="Texture2D" uid="uid://brfvr6mhe4uxa" path="res://drones/drone/drone_0.png" id="2_l2pot"]
+[ext_resource type="Script" path="res://zombies/zombie/zombiehead.gd" id="1_bs8wh"]
+[ext_resource type="Texture2D" uid="uid://brfvr6mhe4uxa" path="res://drones_zigzag/drone_zigzag/drone_0z.png" id="2_xn3hg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krgg3"]
 resource_name = "material_0"
@@ -9,7 +9,7 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("2_l2pot")
+albedo_texture = ExtResource("2_xn3hg")
 texture_filter = 0
 texture_repeat = false
 
@@ -49,7 +49,7 @@ shadow_mesh = SubResource("ArrayMesh_wudyk")
 points = PackedVector3Array(-0.0974741, 0.543179, -0.00372063, 0.378721, 0.974773, 0.00372063, 0.378721, 0.974773, -0.00372063, -0.0974741, 0.974773, 0.00372063, 0.378721, 0.543179, 0.00372063, 0.378721, 0.543179, -0.00372063, -0.0974741, 0.974773, -0.00372063, -0.0974741, 0.543179, 0.00372063)
 
 [node name="Zombiehead" type="RigidBody3D"]
-script = ExtResource("1_uisn4")
+script = ExtResource("1_bs8wh")
 
 [node name="head" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.5, 0, 2.18557e-07, 0, 2.5, 0, -2.18557e-07, 0, -2.5, 0.34, -1.86, 2.41593e-08)

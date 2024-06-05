@@ -12,6 +12,7 @@ var c = preload("res://plants/chomper/chomper.tscn")
 var cb = preload("res://plants/cherrybomb/cherrybomb.tscn")
 var z1 = preload("res://zombies/zombie/zombie.tscn")
 var drone = preload("res://drones/drone/drone.tscn")
+var zigzag_drone = preload("res://drones_zigzag/drone_zigzag/drone_zigzag.tscn")
 var fallingsun = preload("res://projectiles/fallingsun/fallingsun.tscn")
 var gameover = preload("res://projectiles/gameover/gameover.tscn")
 
@@ -19,6 +20,8 @@ var globalTime = 0
 var level = 1
 var levelDuration = 5
 const raylength = 1000
+static var shared_variable = 0
+var point_to_shot_index = -1
 
 @onready var level_label = $"../LevelLabel"
 @onready var zsp = [$"../zsp/Marker3D",$"../zsp/Marker3D2",$"../zsp/Marker3D3",$"../zsp/Marker3D4",$"../zsp/Marker3D5",$"../zsp/Marker3D6",$"../zsp/Marker3D7",$"../zsp/Marker3D8",$"../zsp/Marker3D9",$"../zsp/Marker3D10"]
@@ -41,7 +44,17 @@ func _physics_process(delta):
 	var query = PhysicsRayQueryParameters3D.create(origin, end)
 	query.collide_with_areas = false
 	result = space_state.intersect_ray(query)
-
+	var zigzag_drone_in = zigzag_drone.instantiate()
+	if zigzag_drone_in.number_point_to_shot >= 0:
+		var point = zigzag_drone_in.point_to_shot[zigzag_drone_in.number_point_to_shot]
+		print('!!!!!')
+		print(point.x)
+		print(point.y)
+		ps.instantiate().x = point.x
+		ps.instantiate().y = point.y
+		ps.instantiate().have_point = true
+		print('!!!!!')
+		
 	if result:
 		if Input.is_action_just_pressed("leftclick") and result.collider.is_in_group("normalsun"):
 			sun += 25
@@ -127,15 +140,22 @@ func _on_zsp_timeout():
 	var randomIndexDrone = randi() % zsp.size()
 	var spawnPositionDrone = zsp[randomIndexDrone].global_transform.origin
 	
-	var drone_instance = drone.instantiate()
-	drone_instance.position = spawnPositionDrone
-	get_tree().get_root().add_child(drone_instance)
+	var randomIndexZigZagDrone = randi() % zsp.size()
+	var spawnPositionZigZagDrone = zsp[randomIndexZigZagDrone].global_transform.origin
+	
+	var zigziag_drone_instance = zigzag_drone.instantiate()
+	shared_variable += 1
+	zigziag_drone_instance.index = shared_variable
+	zigziag_drone_instance.position = spawnPositionZigZagDrone
+	get_tree().get_root().add_child(zigziag_drone_instance)
+	
+	#var drone_instance = drone.instantiate()
+	#drone_instance.position = spawnPositionDrone
+	#get_tree().get_root().add_child(drone_instance)
 	
 	var z1a = z1.instantiate()
 	z1a.position = spawnPosition
 	get_tree().get_root().add_child(z1a)
-	
-
 	
 	randomize_timer()
 

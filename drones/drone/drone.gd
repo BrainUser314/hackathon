@@ -22,6 +22,7 @@ func _physics_process(delta):
 	translate(translation)
 		# Print the position (x, y, z) every frame
 	#print("Position: ", global_transform.origin)
+	print("drone")
 
 func walk():
 	ap.play("walk")
@@ -31,7 +32,7 @@ func walk():
 		ap.speed_scale = 1.0
 
 func walkforward():
-	translation = Vector3(-0.05, 0, 0)
+	translation = Vector3(-0.09, 0, 0)
 
 func stopwalk():
 	translation = Vector3(0, 0, 0)

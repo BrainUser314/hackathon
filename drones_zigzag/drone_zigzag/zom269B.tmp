@@ -1,17 +1,17 @@
-[gd_scene load_steps=56 format=3 uid="uid://8kp360rnitwy"]
+[gd_scene load_steps=63 format=3 uid="uid://c2nyutwce1vgg"]
 
-[ext_resource type="Script" path="res://drones/drone/drone.gd" id="1_dfnpt"]
-[ext_resource type="Texture2D" uid="uid://cdlh4n4a0nm26" path="res://zombies/zombie/zombie_5.png" id="2_oxg4a"]
-[ext_resource type="Texture2D" uid="uid://xmimxh1edv2r" path="res://zombies/zombie/zombie_6.png" id="3_abhti"]
-[ext_resource type="Texture2D" uid="uid://b3r86212gkjrc" path="res://zombies/zombie/zombie_3.png" id="4_d45wg"]
-[ext_resource type="Texture2D" uid="uid://dknmqi5xvrdrq" path="res://zombies/zombie/zombie_4.png" id="5_t8cdh"]
-[ext_resource type="Texture2D" uid="uid://b636slyf733cd" path="res://zombies/zombie/zombie_1.png" id="6_qupo5"]
-[ext_resource type="Texture2D" uid="uid://bgf8x8d11epoo" path="res://zombies/zombie/zombie_2.png" id="8_s8m8w"]
-[ext_resource type="Texture2D" uid="uid://brfvr6mhe4uxa" path="res://drones/drone/drone_0.png" id="8_xr07q"]
-[ext_resource type="Texture2D" uid="uid://bnwjl3roae02n" path="res://zombies/zombie/zombie_7.png" id="9_w1o66"]
-[ext_resource type="Texture2D" uid="uid://npphjkyyx1w5" path="res://zombies/zombie/zombie_9.png" id="10_ndei5"]
-[ext_resource type="Texture2D" uid="uid://bpmyul2npqegp" path="res://zombies/zombie/zombie_8.png" id="11_jsp75"]
-[ext_resource type="Script" path="res://zombies/zombie/hitbox.gd" id="12_osbk1"]
+[ext_resource type="Script" path="res://zombies/zombie/zombie.gd" id="1_8gl8h"]
+[ext_resource type="Texture2D" uid="uid://cdlh4n4a0nm26" path="res://zombies/zombie/zombie_5.png" id="2_vslvh"]
+[ext_resource type="Texture2D" uid="uid://xmimxh1edv2r" path="res://zombies/zombie/zombie_6.png" id="3_fht58"]
+[ext_resource type="Texture2D" uid="uid://b3r86212gkjrc" path="res://zombies/zombie/zombie_3.png" id="4_e7v3y"]
+[ext_resource type="Texture2D" uid="uid://dknmqi5xvrdrq" path="res://zombies/zombie/zombie_4.png" id="5_x4ps7"]
+[ext_resource type="Texture2D" uid="uid://b636slyf733cd" path="res://zombies/zombie/zombie_1.png" id="6_ssw4a"]
+[ext_resource type="Texture2D" uid="uid://1r7e25rgshb7" path="res://zombies/zombie/zombie_0.png" id="7_fsijs"]
+[ext_resource type="Texture2D" uid="uid://bgf8x8d11epoo" path="res://zombies/zombie/zombie_2.png" id="8_ny1tt"]
+[ext_resource type="Texture2D" uid="uid://bnwjl3roae02n" path="res://zombies/zombie/zombie_7.png" id="9_ufitx"]
+[ext_resource type="Texture2D" uid="uid://npphjkyyx1w5" path="res://zombies/zombie/zombie_9.png" id="10_a0wtj"]
+[ext_resource type="Texture2D" uid="uid://bpmyul2npqegp" path="res://zombies/zombie/zombie_8.png" id="11_h5bxu"]
+[ext_resource type="Script" path="res://zombies/zombie/hitbox.gd" id="12_ugsg5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f66m4"]
 resource_name = "material_5"
@@ -19,7 +19,7 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("2_oxg4a")
+albedo_texture = ExtResource("2_vslvh")
 texture_filter = 0
 texture_repeat = false
 
@@ -55,13 +55,18 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_vra48")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_seewt"]
+transparency = 1
+albedo_texture = ExtResource("2_vslvh")
+texture_filter = 0
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0lc2c"]
 resource_name = "material_6"
 transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("3_abhti")
+albedo_texture = ExtResource("3_fht58")
 texture_filter = 0
 texture_repeat = false
 
@@ -97,13 +102,18 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_8i6i4")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nnuts"]
+transparency = 1
+albedo_texture = ExtResource("3_fht58")
+texture_filter = 0
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rx0o1"]
 resource_name = "material_3"
 transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("4_d45wg")
+albedo_texture = ExtResource("4_e7v3y")
 texture_filter = 0
 texture_repeat = false
 
@@ -139,13 +149,18 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_kwi0g")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wlwkg"]
+transparency = 1
+albedo_texture = ExtResource("4_e7v3y")
+texture_filter = 0
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_udntx"]
 resource_name = "material_4"
 transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("5_t8cdh")
+albedo_texture = ExtResource("5_x4ps7")
 texture_filter = 0
 texture_repeat = false
 
@@ -181,13 +196,18 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ap02y")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ocj3s"]
+transparency = 1
+albedo_texture = ExtResource("5_x4ps7")
+texture_filter = 0
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j8smm"]
 resource_name = "material_1"
 transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("6_qupo5")
+albedo_texture = ExtResource("6_ssw4a")
 texture_filter = 0
 texture_repeat = false
 
@@ -223,21 +243,20 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_05o4h")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qhayx"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xdx3b"]
 transparency = 1
-albedo_color = Color(0.196078, 0.364706, 1, 0)
+albedo_texture = ExtResource("6_ssw4a")
+texture_filter = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krgg3"]
 resource_name = "material_0"
-next_pass = SubResource("StandardMaterial3D_qhayx")
 transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("8_xr07q")
+albedo_texture = ExtResource("7_fsijs")
 texture_filter = 0
 texture_repeat = false
-grow_amount = 3.556
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_3gbrj"]
 _surfaces = [{
@@ -271,9 +290,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_3gbrj")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rhhc1"]
-transparency = 4
-albedo_texture = ExtResource("8_xr07q")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qydu6"]
+transparency = 1
+albedo_texture = ExtResource("7_fsijs")
 texture_filter = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y0ef6"]
@@ -282,7 +301,7 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("8_s8m8w")
+albedo_texture = ExtResource("8_ny1tt")
 texture_filter = 0
 texture_repeat = false
 
@@ -318,13 +337,18 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_8t2y7")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uqjnb"]
+transparency = 1
+albedo_texture = ExtResource("8_ny1tt")
+texture_filter = 0
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_buts7"]
 resource_name = "material_7"
 transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("9_w1o66")
+albedo_texture = ExtResource("9_ufitx")
 texture_filter = 0
 texture_repeat = false
 
@@ -360,13 +384,18 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_e7b5o")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mqhn7"]
+transparency = 1
+albedo_texture = ExtResource("9_ufitx")
+texture_filter = 0
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v2w7f"]
 resource_name = "material_9"
 transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("10_ndei5")
+albedo_texture = ExtResource("10_a0wtj")
 texture_filter = 0
 texture_repeat = false
 
@@ -402,13 +431,18 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_gk21e")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3e68v"]
+transparency = 1
+albedo_texture = ExtResource("10_a0wtj")
+texture_filter = 0
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c8qvc"]
 resource_name = "material_8"
 transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("11_jsp75")
+albedo_texture = ExtResource("11_h5bxu")
 texture_filter = 0
 texture_repeat = false
 
@@ -444,18 +478,23 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_7nc5g")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_shjql"]
+transparency = 1
+albedo_texture = ExtResource("11_h5bxu")
+texture_filter = 0
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_kr8ua"]
 size = Vector3(1, 2.3, 0.6)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pkfc6"]
-size = Vector3(1, 3, 1)
+size = Vector3(1, 2.4, 1)
 
 [sub_resource type="Animation" id="Animation_avtey"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("drone/lega:rotation")
+tracks/0/path = NodePath("zombie/lega:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -467,7 +506,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("drone/leg2a:rotation")
+tracks/1/path = NodePath("zombie/leg2a:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -479,7 +518,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("drone/body:rotation")
+tracks/2/path = NodePath("zombie/body:rotation")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -491,7 +530,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("drone/body:position")
+tracks/3/path = NodePath("zombie/body:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -503,7 +542,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("drone/body/arma:rotation")
+tracks/4/path = NodePath("zombie/body/arma:rotation")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -515,7 +554,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("drone/body/arm2a:rotation")
+tracks/5/path = NodePath("zombie/body/arm2a:rotation")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -527,7 +566,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("drone/body/head:rotation")
+tracks/6/path = NodePath("zombie/body/head:rotation")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -539,7 +578,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("drone/lega:position")
+tracks/7/path = NodePath("zombie/lega:position")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -551,7 +590,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("drone/leg2a:position")
+tracks/8/path = NodePath("zombie/leg2a:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -563,7 +602,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("drone/body/arma/armb:rotation")
+tracks/9/path = NodePath("zombie/body/arma/armb:rotation")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -575,7 +614,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("drone/body/arm2a/arm2b:rotation")
+tracks/10/path = NodePath("zombie/body/arm2a/arm2b:rotation")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -587,7 +626,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("drone/leg2a/leg2b:rotation")
+tracks/11/path = NodePath("zombie/leg2a/leg2b:rotation")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -599,7 +638,7 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("drone/leg2a/leg2b:position")
+tracks/12/path = NodePath("zombie/leg2a/leg2b:position")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
@@ -611,7 +650,7 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("drone/lega/legb:rotation")
+tracks/13/path = NodePath("zombie/lega/legb:rotation")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
@@ -623,7 +662,7 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("drone/lega/legb:position")
+tracks/14/path = NodePath("zombie/lega/legb:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
@@ -635,7 +674,7 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("drone:position")
+tracks/15/path = NodePath("zombie:position")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
@@ -644,22 +683,9 @@ tracks/15/keys = {
 "update": 0,
 "values": [Vector3(0.1, 0, 0)]
 }
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("hitbox/CollisionShape3D:position")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0.9, 0)]
-}
 
 [sub_resource type="Animation" id="Animation_mcvww"]
 resource_name = "die"
-length = 1.5
 tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -667,7 +693,7 @@ tracks/0/path = NodePath(".")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 1.5),
+"times": PackedFloat32Array(0, 0.1, 1),
 "transitions": PackedFloat32Array(1, 1, 1),
 "values": [{
 "args": [],
@@ -683,7 +709,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("drone/body:rotation")
+tracks/1/path = NodePath("zombie/body:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -695,7 +721,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("drone/leg2a:rotation")
+tracks/2/path = NodePath("zombie/leg2a:rotation")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -707,7 +733,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("drone/lega:rotation")
+tracks/3/path = NodePath("zombie/lega:rotation")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -719,7 +745,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("drone/body/arma:rotation")
+tracks/4/path = NodePath("zombie/body/arma:rotation")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -731,7 +757,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("drone/body/arm2a:rotation")
+tracks/5/path = NodePath("zombie/body/arm2a:rotation")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -743,7 +769,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("drone/body/arm2a/arm2b:rotation")
+tracks/6/path = NodePath("zombie/body/arm2a/arm2b:rotation")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -755,7 +781,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("drone/body/head:rotation")
+tracks/7/path = NodePath("zombie/body/head:rotation")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -767,7 +793,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("drone/leg2a/leg2b:rotation")
+tracks/8/path = NodePath("zombie/leg2a/leg2b:rotation")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -779,7 +805,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("drone/leg2a/leg2b:position")
+tracks/9/path = NodePath("zombie/leg2a/leg2b:position")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -791,7 +817,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("drone/lega/legb:rotation")
+tracks/10/path = NodePath("zombie/lega/legb:rotation")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -803,7 +829,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("drone/lega:position")
+tracks/11/path = NodePath("zombie/lega:position")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -815,7 +841,7 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("drone/leg2a:position")
+tracks/12/path = NodePath("zombie/leg2a:position")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
@@ -827,7 +853,7 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("drone/body:position")
+tracks/13/path = NodePath("zombie/body:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
@@ -839,7 +865,7 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("drone/lega/legb:position")
+tracks/14/path = NodePath("zombie/lega/legb:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
@@ -851,26 +877,14 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("hitbox/CollisionShape3D:position")
+tracks/15/path = NodePath("zombie:position")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0.3, 0.4),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0.5, 0.6),
+"transitions": PackedFloat32Array(-2, -2),
 "update": 0,
-"values": [Vector3(0, 0.9, 0), Vector3(0, -2.1, 0)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("drone:position")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
-"times": PackedFloat32Array(1, 1.5),
-"transitions": PackedFloat32Array(0.5, 0.5),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, -1, 0)]
+"values": [Vector3(0, 0, 0), Vector3(-0.3, 0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_sfciv"]
@@ -899,7 +913,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("drone/body/head:rotation")
+tracks/1/path = NodePath("zombie/body/head:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -911,7 +925,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("drone/body/arma:rotation")
+tracks/2/path = NodePath("zombie/body/arma:rotation")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -923,7 +937,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("drone/body/arm2a:rotation")
+tracks/3/path = NodePath("zombie/body/arm2a:rotation")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -935,7 +949,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("drone/body/arma/armb:rotation")
+tracks/4/path = NodePath("zombie/body/arma/armb:rotation")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -947,7 +961,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("drone/body/arm2a/arm2b:rotation")
+tracks/5/path = NodePath("zombie/body/arm2a/arm2b:rotation")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -959,7 +973,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("drone/body:position")
+tracks/6/path = NodePath("zombie/body:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -971,7 +985,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("drone/lega:rotation")
+tracks/7/path = NodePath("zombie/lega:rotation")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -983,7 +997,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("drone/lega:position")
+tracks/8/path = NodePath("zombie/lega:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -995,7 +1009,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("drone/leg2a:rotation")
+tracks/9/path = NodePath("zombie/leg2a:rotation")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -1007,7 +1021,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("drone/leg2a:position")
+tracks/10/path = NodePath("zombie/leg2a:position")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -1019,7 +1033,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("drone:position")
+tracks/11/path = NodePath("zombie:position")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -1036,7 +1050,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("drone/leg2a:position")
+tracks/0/path = NodePath("zombie/leg2a:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -1048,7 +1062,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("drone/lega:position")
+tracks/1/path = NodePath("zombie/lega:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -1060,7 +1074,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("drone/lega:rotation")
+tracks/2/path = NodePath("zombie/lega:rotation")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -1072,7 +1086,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("drone/leg2a:rotation")
+tracks/3/path = NodePath("zombie/leg2a:rotation")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -1084,7 +1098,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("drone/body:rotation")
+tracks/4/path = NodePath("zombie/body:rotation")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -1096,7 +1110,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("drone/body:position")
+tracks/5/path = NodePath("zombie/body:position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -1108,7 +1122,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("drone/body/arma:rotation")
+tracks/6/path = NodePath("zombie/body/arma:rotation")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -1120,7 +1134,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("drone/body/arm2a:rotation")
+tracks/7/path = NodePath("zombie/body/arm2a:rotation")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -1132,7 +1146,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("drone/body/head:rotation")
+tracks/8/path = NodePath("zombie/body/head:rotation")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -1167,7 +1181,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("drone/body/arma/armb:rotation")
+tracks/10/path = NodePath("zombie/body/arma/armb:rotation")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -1179,7 +1193,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("drone/body/arm2a/arm2b:rotation")
+tracks/11/path = NodePath("zombie/body/arm2a/arm2b:rotation")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -1191,7 +1205,7 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("drone:position")
+tracks/12/path = NodePath("zombie:position")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
@@ -1214,10 +1228,118 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("drone/body/head/head:surface_material_override/0:albedo_color")
+tracks/0/path = NodePath("zombie/lega/lega:surface_material_override/0:albedo_color")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("zombie/lega/legb/legb:surface_material_override/0:albedo_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("zombie/leg2a/leg2a:surface_material_override/0:albedo_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("zombie/leg2a/leg2b/leg2b:surface_material_override/0:albedo_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("zombie/body/body:surface_material_override/0:albedo_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("zombie/body/head/head:surface_material_override/0:albedo_color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("zombie/body/arma/arma:surface_material_override/0:albedo_color")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("zombie/body/arma/armb/armb:surface_material_override/0:albedo_color")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("zombie/body/arm2a/arm2a:surface_material_override/0:albedo_color")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("zombie/body/arm2a/arm2b/arm2b:surface_material_override/0:albedo_color")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -1230,133 +1352,225 @@ length = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("drone/body/head/head:surface_material_override/0:albedo_color")
+tracks/0/path = NodePath("zombie/lega/lega:surface_material_override/0:albedo_color")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0, 0.682353, 1, 1)]
+"values": [Color(1, 1, 1, 1), Color(0, 0.6, 1, 1)]
 }
-
-[sub_resource type="Animation" id="Animation_fpdwi"]
-resource_name = "unchill"
-length = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("drone/body/head/head:surface_material_override/0:albedo_color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("zombie/lega/legb/legb:surface_material_override/0:albedo_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 1)]
+"values": [Color(1, 1, 1, 1), Color(0, 0.6, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("zombie/leg2a/leg2a:surface_material_override/0:albedo_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0.6, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("zombie/leg2a/leg2b/leg2b:surface_material_override/0:albedo_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0.6, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("zombie/body/body:surface_material_override/0:albedo_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0.6, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("zombie/body/head/head:surface_material_override/0:albedo_color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0.6, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("zombie/body/arma/arma:surface_material_override/0:albedo_color")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0.6, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("zombie/body/arma/armb/armb:surface_material_override/0:albedo_color")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0.6, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("zombie/body/arm2a/arm2a:surface_material_override/0:albedo_color")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0.6, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("zombie/body/arm2a/arm2b/arm2b:surface_material_override/0:albedo_color")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0.6, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ol4tu"]
 _data = {
 "RESET": SubResource("Animation_gc2ch"),
-"chill": SubResource("Animation_phheo"),
-"unchill": SubResource("Animation_fpdwi")
+"chill": SubResource("Animation_phheo")
 }
 
-[node name="drone" type="StaticBody3D" groups=["zombie"]]
-script = ExtResource("1_dfnpt")
+[node name="zombie" type="StaticBody3D" groups=["zombie"]]
+script = ExtResource("1_8gl8h")
 
-[node name="drone" type="Node3D" parent="."]
+[node name="zombie" type="Node3D" parent="."]
 transform = Transform3D(-2.5, 0, 3.77489e-07, 0, 2.5, 0, -3.77489e-07, 0, -2.5, 0.1, 0, 0)
 
-[node name="lega" type="Node3D" parent="drone"]
+[node name="lega" type="Node3D" parent="zombie"]
 transform = Transform3D(1, 2.38419e-08, -2.84217e-14, -2.38419e-08, 1, 7.57851e-16, 2.84217e-14, -7.5785e-16, 1, -0.08, 0.28, 1.20797e-08)
-visible = false
 
-[node name="lega" type="MeshInstance3D" parent="drone/lega"]
+[node name="lega" type="MeshInstance3D" parent="zombie/lega"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04, -0.28, -6.03983e-09)
 mesh = SubResource("ArrayMesh_57d4h")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_seewt")
 
-[node name="legb" type="Node3D" parent="drone/lega"]
+[node name="legb" type="Node3D" parent="zombie/lega"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.72529e-08, -0.16, -1.77636e-15)
 
-[node name="legb" type="MeshInstance3D" parent="drone/lega/legb"]
+[node name="legb" type="MeshInstance3D" parent="zombie/lega/legb"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04, -0.12, -6.03983e-09)
 mesh = SubResource("ArrayMesh_d4ikm")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_nnuts")
 
-[node name="leg2a" type="Node3D" parent="drone"]
+[node name="leg2a" type="Node3D" parent="zombie"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08, 0.28, -1.20797e-08)
-visible = false
 
-[node name="leg2a" type="MeshInstance3D" parent="drone/leg2a"]
+[node name="leg2a" type="MeshInstance3D" parent="zombie/leg2a"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12, -0.28, 1.81195e-08)
 mesh = SubResource("ArrayMesh_a8sjq")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_wlwkg")
 
-[node name="leg2b" type="Node3D" parent="drone/leg2a"]
+[node name="leg2b" type="Node3D" parent="zombie/leg2a"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.11759e-08, -0.16, -8.88178e-16)
 
-[node name="leg2b" type="MeshInstance3D" parent="drone/leg2a/leg2b"]
+[node name="leg2b" type="MeshInstance3D" parent="zombie/leg2a/leg2b"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12, -0.12, 1.81195e-08)
 mesh = SubResource("ArrayMesh_3qcj3")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_ocj3s")
 
-[node name="body" type="Node3D" parent="drone"]
+[node name="body" type="Node3D" parent="zombie"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04, 0.44, -6.03984e-09)
 
-[node name="body" type="MeshInstance3D" parent="drone/body"]
+[node name="body" type="MeshInstance3D" parent="zombie/body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04, -0.44, 6.03983e-09)
-visible = false
 mesh = SubResource("ArrayMesh_3r7mh")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_xdx3b")
 
-[node name="head" type="Node3D" parent="drone/body"]
+[node name="head" type="Node3D" parent="zombie/body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12, 0.32, -1.81195e-08)
 
-[node name="head" type="MeshInstance3D" parent="drone/body/head"]
+[node name="head" type="MeshInstance3D" parent="zombie/body/head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16, -0.76, 2.41593e-08)
 mesh = SubResource("ArrayMesh_j5v02")
 skeleton = NodePath("")
-surface_material_override/0 = SubResource("StandardMaterial3D_rhhc1")
+surface_material_override/0 = SubResource("StandardMaterial3D_qydu6")
 
-[node name="arma" type="Node3D" parent="drone/body"]
+[node name="arma" type="Node3D" parent="zombie/body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04, 0.16, 6.03983e-09)
-visible = false
 
-[node name="arma" type="MeshInstance3D" parent="drone/body/arma"]
+[node name="arma" type="MeshInstance3D" parent="zombie/body/arma"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.72529e-09, -0.6, 8.88178e-16)
 mesh = SubResource("ArrayMesh_tfx38")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_uqjnb")
 
-[node name="armb" type="Node3D" parent="drone/body/arma"]
+[node name="armb" type="Node3D" parent="zombie/body/arma"]
 transform = Transform3D(1, 1.02997e-21, 1.42109e-14, -1.02997e-21, 1, -4.26326e-15, -1.42109e-14, 4.26326e-15, 1, 8.19564e-08, -0.2, 0.04)
 
-[node name="armb" type="MeshInstance3D" parent="drone/body/arma/armb"]
+[node name="armb" type="MeshInstance3D" parent="zombie/body/arma/armb"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 0)
 mesh = SubResource("ArrayMesh_evl37")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_mqhn7")
 
-[node name="arm2a" type="Node3D" parent="drone/body"]
+[node name="arm2a" type="Node3D" parent="zombie/body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08, 0.16, -1.20797e-08)
-visible = false
 
-[node name="arm2a" type="MeshInstance3D" parent="drone/body/arm2a"]
+[node name="arm2a" type="MeshInstance3D" parent="zombie/body/arm2a"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12, -0.6, 1.81195e-08)
-visible = false
 mesh = SubResource("ArrayMesh_685ue")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_3e68v")
 
-[node name="arm2b" type="Node3D" parent="drone/body/arm2a"]
+[node name="arm2b" type="Node3D" parent="zombie/body/arm2a"]
 transform = Transform3D(1, 1.02997e-21, 1.42109e-14, -1.02997e-21, 1, -4.26326e-15, -1.42109e-14, 4.26326e-15, 1, 7.45058e-09, -0.2, -1.77636e-15)
-visible = false
 
-[node name="arm2b" type="MeshInstance3D" parent="drone/body/arm2a/arm2b"]
+[node name="arm2b" type="MeshInstance3D" parent="zombie/body/arm2a/arm2b"]
 transform = Transform3D(1, 4.29156e-22, 0, 1.02997e-21, 1, -2.84216e-16, 1.42109e-14, -4.26326e-15, 1, -0.12, -0.4, 1.81195e-08)
-visible = false
 mesh = SubResource("ArrayMesh_g5qh0")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_shjql")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0)
@@ -1371,10 +1585,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 1.7, 0)
 
 [node name="hitbox" type="Area3D" parent="." groups=["zombie"]]
 collision_layer = 3
-script = ExtResource("12_osbk1")
+script = ExtResource("12_ugsg5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hitbox"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0)
 shape = SubResource("BoxShape3D_pkfc6")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

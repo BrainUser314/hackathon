@@ -2,12 +2,18 @@ extends StaticBody3D
 
 var health = 100
 var can_shoot = true
-var x = 2
+static var x = -1
+static var y = -1
 @onready var pea = preload("res://projectiles/simpleAirRocket/simpleAirRocket.tscn")
+static var have_point = false
 
 func _physics_process(delta):
 	var collider = $RayCast3D.get_collider()
-	if collider and collider.is_in_group("zombie") and can_shoot:
+	if (collider and collider.is_in_group("zombie") and can_shoot) or have_point:
+		if have_point:
+			pea.instantiate().x = x
+			pea.instantiate().y = y
+			pea.instantiate().have_target = true
 		$AnimationPlayer2.play("shoot")
 
 func shootpea():
