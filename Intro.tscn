@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Intro.gd" id="1_4hi66"]
 [ext_resource type="VideoStream" path="res://intro/OctoberRainGame.ogv" id="2_cmv11"]
-[ext_resource type="AudioStream" uid="uid://n81spmhr2jxj" path="res://music/Eden Golan - Hurricane.mp3" id="2_ofjp5"]
-[ext_resource type="Texture2D" uid="uid://b30tv5mhd3eqg" path="res://intro/startIMG.jpg" id="3_ehgke"]
+[ext_resource type="AudioStream" uid="uid://boqw8tcgric34" path="res://music/Eden Golan - Hurricane.mp3" id="2_ofjp5"]
+[ext_resource type="Texture2D" uid="uid://bfh4yape7dden" path="res://intro/startIMG.jpg" id="3_ehgke"]
 
 [node name="Intro" type="Control"]
 layout_mode = 3
@@ -25,6 +25,9 @@ offset_left = 1057.0
 offset_top = 9.0
 offset_right = 1437.0
 offset_bottom = 1015.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0.882353, 0.666667, 0, 1)
+theme_override_colors/icon_hover_color = Color(0.93845, 0.93845, 0.93845, 1)
 icon = ExtResource("3_ehgke")
 icon_alignment = 1
 

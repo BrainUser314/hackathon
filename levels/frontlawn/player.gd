@@ -17,7 +17,7 @@ var gameover = preload("res://projectiles/gameover/gameover.tscn")
 
 var globalTime = 0
 var level = 1
-var levelDuration = 5
+var levelDuration = 15
 const raylength = 1000
 
 @onready var level_label = $"../LevelLabel"

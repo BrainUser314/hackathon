@@ -57,7 +57,7 @@
 [ext_resource type="Texture2D" uid="uid://bopfnxuk05ts1" path="res://ui/seed/wnseed/wnseedhover.png" id="55_s5ucb"]
 [ext_resource type="Texture2D" uid="uid://cxaqh8g6duha8" path="res://ui/seed/wnseed/wnseeddisabled.png" id="56_dbv0w"]
 [ext_resource type="Texture2D" uid="uid://i065jubf8p8q" path="res://projectiles/gameover/gameover.png" id="62_0vbwg"]
-[ext_resource type="AudioStream" uid="uid://orlhp8cq5a38" path="res://music/charbuDarbu.mp3" id="63_3ppis"]
+[ext_resource type="AudioStream" uid="uid://duuhcakrl706u" path="res://music/charbuDarbu.mp3" id="63_3ppis"]
 [ext_resource type="Texture2D" uid="uid://cbi1o3vfxg0kb" path="res://ui/shovelnormal.png" id="65_a5qh5"]
 [ext_resource type="Texture2D" uid="uid://bswr3ljrv6uo6" path="res://ui/shovelpressed.png" id="66_mihpy"]
 [ext_resource type="Texture2D" uid="uid://l8iifjwdxvd1" path="res://ui/shovelhover.png" id="67_nh0pe"]
@@ -2963,9 +2963,7 @@ layout_mode = 2
 offset_left = 322.0
 offset_right = 422.0
 offset_bottom = 140.0
-tooltip_text = "Sunflower
-rreeee SUUUUNNN
-SEHHEEHHSSH"
+tooltip_text = "Biden contribution"
 keep_pressed_outside = true
 texture_normal = ExtResource("33_te0p3")
 texture_pressed = ExtResource("34_ldofb")
@@ -2982,8 +2980,7 @@ layout_mode = 2
 offset_left = 422.0
 offset_right = 522.0
 offset_bottom = 140.0
-tooltip_text = "Peashooter
-SHeeeshshh it shoot peas, whatdya expect?"
+tooltip_text = "Kipat Barzel - Aggainst drones"
 keep_pressed_outside = true
 texture_normal = ExtResource("37_sibaw")
 texture_pressed = ExtResource("38_agny6")
@@ -3000,8 +2997,7 @@ layout_mode = 2
 offset_left = 522.0
 offset_right = 622.0
 offset_bottom = 132.0
-tooltip_text = "Repeater
-peashooter but better :)"
+tooltip_text = "Meil Ruach - Against terrorists"
 keep_pressed_outside = true
 texture_normal = ExtResource("41_imm2n")
 texture_pressed = ExtResource("42_mq2qc")
@@ -3018,8 +3014,7 @@ layout_mode = 2
 offset_left = 622.0
 offset_right = 733.0
 offset_bottom = 141.0
-tooltip_text = "Snow Peashooter
-Peashooter but snow"
+tooltip_text = "Til Gil - Against terrorists"
 keep_pressed_outside = true
 texture_normal = ExtResource("45_rn2b0")
 texture_pressed = ExtResource("46_dds8k")
@@ -3076,7 +3071,7 @@ offset_left = 795.0
 offset_top = 16.0
 offset_right = 895.0
 offset_bottom = 135.0
-tooltip_text = "Shovel"
+tooltip_text = "Garbage (weapon) Collector"
 keep_pressed_outside = true
 texture_normal = ExtResource("65_a5qh5")
 texture_pressed = ExtResource("66_mihpy")
@@ -3087,6 +3082,7 @@ layout_mode = 2
 offset_left = 224.0
 offset_right = 320.0
 offset_bottom = 128.0
+tooltip_text = "Bank"
 texture = ExtResource("68_2gsuf")
 stretch_mode = 2
 
