@@ -531,6 +531,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
 
 [node name="leaf" type="MeshInstance3D" parent="peashooter/leaf"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
+visible = false
 mesh = SubResource("ArrayMesh_h71gb")
 skeleton = NodePath("")
 
@@ -538,7 +539,7 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
 
 [node name="head" type="MeshInstance3D" parent="peashooter/head"]
-transform = Transform3D(1, 0, -1.84741e-13, 0, 1, 0, 1.84741e-13, 0, 1, 3.01991e-09, -0.2, 0.02)
+transform = Transform3D(2, 0, -1.33749e-13, 0, 2, 0, 1.33749e-13, 0, 2, -0.00232097, -0.460754, -0.141054)
 mesh = SubResource("ArrayMesh_nsxij")
 skeleton = NodePath("")
 
@@ -553,6 +554,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0.2, 2.98023e-08)
 
 [node name="mouth" type="MeshInstance3D" parent="peashooter/head/mouth"]
 transform = Transform3D(1, 0, -1.98952e-13, 0, 1, 0, 1.98952e-13, 0, 1, 0.2, -0.4, 0.02)
+visible = false
 mesh = SubResource("ArrayMesh_sjev4")
 skeleton = NodePath("")
 
@@ -567,6 +569,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16, 0.32, -7.45058e-09)
 
 [node name="headleaf" type="MeshInstance3D" parent="peashooter/head/headleaf"]
 transform = Transform3D(1, 0, -1.98952e-13, 0, 1, 0, 1.98952e-13, 0, 1, -0.16, -0.52, 0.02)
+visible = false
 mesh = SubResource("ArrayMesh_fx0q7")
 skeleton = NodePath("")
 
