@@ -57,7 +57,7 @@
 [ext_resource type="Texture2D" uid="uid://bopfnxuk05ts1" path="res://ui/seed/wnseed/wnseedhover.png" id="55_s5ucb"]
 [ext_resource type="Texture2D" uid="uid://cxaqh8g6duha8" path="res://ui/seed/wnseed/wnseeddisabled.png" id="56_dbv0w"]
 [ext_resource type="Texture2D" uid="uid://i065jubf8p8q" path="res://projectiles/gameover/gameover.png" id="62_0vbwg"]
-[ext_resource type="AudioStream" uid="uid://bb1bpguthaqbw" path="res://music/charbuDarbu.mp3" id="63_3ppis"]
+[ext_resource type="AudioStream" uid="uid://orlhp8cq5a38" path="res://music/charbuDarbu.mp3" id="63_3ppis"]
 [ext_resource type="Texture2D" uid="uid://cbi1o3vfxg0kb" path="res://ui/shovelnormal.png" id="65_a5qh5"]
 [ext_resource type="Texture2D" uid="uid://bswr3ljrv6uo6" path="res://ui/shovelpressed.png" id="66_mihpy"]
 [ext_resource type="Texture2D" uid="uid://l8iifjwdxvd1" path="res://ui/shovelhover.png" id="67_nh0pe"]
@@ -2792,7 +2792,7 @@ mesh = SubResource("ArrayMesh_80mlb")
 skeleton = NodePath("")
 
 [node name="house" type="MeshInstance3D" parent="frontlawn"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.03093, -0.292499, -2.34732)
+transform = Transform3D(-6.55671e-08, 0, 1, 0, 1, 0, -1.5, 0, -4.37114e-08, -3.39626, -0.80396, -1.82935)
 mesh = SubResource("ArrayMesh_vp67h")
 skeleton = NodePath("")
 
