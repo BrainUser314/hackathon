@@ -3,7 +3,7 @@ extends Camera3D
 var sun = 1000
 var result
 var wn = preload("res://plants/wallnut/wallnut.tscn")
-var ps = preload("res://plants/peashooter/peashooter.tscn")
+var ps = preload("res://plants/IronDome/IronDome.tscn")
 var sf = preload("res://plants/sunflower/sunflower.tscn")
 var rp = preload("res://plants/repeater/repeater.tscn")
 var pm = preload("res://plants/potatomine/potatomine.tscn")

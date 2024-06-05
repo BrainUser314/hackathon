@@ -17,11 +17,11 @@ func _physics_process(delta):
 	counter += 1
 	if counter == 1:
 		translation = Vector3(0,0.07,0)
-	if health <= 50:
-		armdetach()
 	if health <= 0:
-		ap.play("die")
+		queue_free()
 	translate(translation)
+		# Print the position (x, y, z) every frame
+	#print("Position: ", global_transform.origin)
 
 func walk():
 	ap.play("walk")
@@ -31,7 +31,7 @@ func walk():
 		ap.speed_scale = 1.0
 
 func walkforward():
-	translation = Vector3(-0.1, 0, 0)
+	translation = Vector3(-0.05, 0, 0)
 
 func stopwalk():
 	translation = Vector3(0, 0, 0)
@@ -60,17 +60,7 @@ func eat():
 		walk()
 
 func armdetach():
-	if arm_can_detach:
-		$zombie/body/arma/armb.hide()
-		var arm2 = arm.instantiate()
-		arm2.global_transform.origin = $Marker3D.global_transform.origin
-		get_tree().get_root().add_child(arm2)
-		arm_can_detach = false
+	pass
 
 func headdeteach():
-	if head_can_detach:
-		$zombie/body/head.hide()
-		var head2 = head.instantiate()
-		head2.global_transform.origin = $Marker3D2.global_transform.origin
-		get_tree().get_root().add_child(head2)
-		head_can_detach = false
+	pass

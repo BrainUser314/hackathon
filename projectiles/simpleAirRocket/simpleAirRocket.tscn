@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dxonogtrdxfaf"]
 
-[ext_resource type="Script" path="res://projectiles/pea/pea.gd" id="1_ts17c"]
+[ext_resource type="Script" path="res://projectiles/simpleAirRocket/simpleAirRocket.gd" id="1_mud8s"]
 [ext_resource type="Texture2D" uid="uid://uy2hy14ppsyr" path="res://projectiles/simpleAirRocket/pea_0.png" id="2_gunvx"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2v2ux"]
@@ -48,11 +48,11 @@ shadow_mesh = SubResource("ArrayMesh_ihwjf")
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hbeyq"]
 points = PackedVector3Array(-0.0950405, -0.00902493, -0.00124023, 0.0637405, 0.149725, 0.00124023, 0.0637405, 0.149725, -0.00124023, -0.0950405, 0.149725, 0.00124023, 0.0637405, -0.00902493, 0.00124023, 0.0637405, -0.00902493, -0.00124023, -0.0950405, 0.149725, -0.00124023, -0.0950405, -0.00902493, 0.00124023)
 
-[node name="Pea" type="Area3D" groups=["normalpea"]]
+[node name="simpleAirRocket" type="Area3D" groups=["normalpea"]]
 collision_mask = 2
-script = ExtResource("1_ts17c")
+script = ExtResource("1_mud8s")
 
-[node name="pea" type="MeshInstance3D" parent="."]
+[node name="simpleAirRocket" type="MeshInstance3D" parent="."]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0.058, -0.265, 0)
 mesh = SubResource("ArrayMesh_bfrrg")
 skeleton = NodePath("")
