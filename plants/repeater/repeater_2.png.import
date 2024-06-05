@@ -2,13 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dekpyjqtojrvr"
+uid="uid://5u43jat5urgq"
 path.s3tc="res://.godot/imported/repeater_2.png-4d6fae7ae8d29ecdb2603269aae3b3ea.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-generator_parameters={}
 
 [deps]
 

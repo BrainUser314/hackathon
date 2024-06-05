@@ -276,16 +276,17 @@ transform = Transform3D(-2.5, 0, 3.57628e-07, 0, 2.5, 0, -3.57628e-07, 0, -2.5, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
 
 [node name="leaf" type="MeshInstance3D" parent="sunflower/leaf"]
-transform = Transform3D(-1.84778, 0.00435278, 0.0850936, 0.00830647, 3.9823, 0.220112, -0.0666094, 0.375861, -2.3331, 0.0100908, -0.0891242, 0.000171363)
+transform = Transform3D(-2.26225, -0.0542182, -0.58045, -0.0675982, 4.97092, 0.264181, 0.453351, 0.470651, -2.8571, 0.0730942, -0.0397413, -0.105821)
 lod_bias = 40.961
 mesh = SubResource("ArrayMesh_21e3e")
 skeleton = NodePath("")
 
 [node name="head" type="Node3D" parent="sunflower"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44, 0)
+visible = false
 
 [node name="head" type="MeshInstance3D" parent="sunflower/head"]
-transform = Transform3D(-0.929837, -0.126805, -0.345434, -0.118867, 0.991928, -0.0441591, 0.348245, 1.81396e-08, -0.937404, 0.0903845, -0.398119, -0.00591685)
+transform = Transform3D(-0.929837, -0.126805, -0.345434, -0.118867, 0.991928, -0.0441591, 0.348245, 1.81396e-08, -0.937404, -0.257961, -0.517251, 0.108431)
 mesh = SubResource("ArrayMesh_wr38f")
 skeleton = NodePath("")
 
