@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://plants/repeater/repeater.gd" id="1_yeitj"]
 [ext_resource type="Texture2D" uid="uid://upefcmameq7h" path="res://plants/repeater/repeater_0.png" id="2_btuvx"]
-[ext_resource type="Texture2D" path="res://plants/repeater/repeater_1.png" id="3_71fx3"]
+[ext_resource type="Texture2D" uid="uid://cy01qhtwfywkf" path="res://plants/repeater/repeater_1.png" id="3_71fx3"]
 [ext_resource type="Texture2D" uid="uid://dekpyjqtojrvr" path="res://plants/repeater/repeater_2.png" id="4_rpn7e"]
 [ext_resource type="Texture2D" uid="uid://6v13qhoctncg" path="res://plants/repeater/repeater_3.png" id="5_luskl"]
 [ext_resource type="Texture2D" uid="uid://biol6u47nlgkk" path="res://plants/repeater/repeater_4.png" id="6_6i8nt"]

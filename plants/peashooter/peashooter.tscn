@@ -1,9 +1,7 @@
-[gd_scene load_steps=33 format=3 uid="uid://c72ubxicxcgwi"]
+[gd_scene load_steps=31 format=3 uid="uid://c72ubxicxcgwi"]
 
 [ext_resource type="Script" path="res://plants/peashooter/peashooter.gd" id="1_5f2y2"]
 [ext_resource type="Texture2D" uid="uid://b41e74qvtqnw2" path="res://plants/peashooter/peashooter_0.png" id="3_4qc4h"]
-[ext_resource type="Texture2D" uid="uid://bc88negpe03w" path="res://plants/peashooter/peashooter_1.png" id="4_etjq8"]
-[ext_resource type="Texture2D" uid="uid://ddurg1kegxq1c" path="res://plants/peashooter/peashooter_2.png" id="5_yrxl5"]
 [ext_resource type="Texture2D" uid="uid://b1loco1l3jord" path="res://plants/peashooter/peashooter_3.png" id="6_hy1yk"]
 [ext_resource type="Texture2D" uid="uid://dm7yn2eetgim" path="res://plants/peashooter/peashooter_4.png" id="7_2feb1"]
 [ext_resource type="Texture2D" uid="uid://dfwdejq4lhx8t" path="res://plants/peashooter/peashooter_5.png" id="8_5eukg"]
@@ -140,7 +138,6 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("4_etjq8")
 texture_filter = 0
 texture_repeat = false
 
@@ -224,7 +221,6 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("5_yrxl5")
 texture_filter = 0
 texture_repeat = false
 
@@ -577,8 +573,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
 shape = SubResource("BoxShape3D_cbeln")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 1, 0)
-target_position = Vector3(16, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 2.52, 0)
+target_position = Vector3(8, 0, 0)
 collision_mask = 2
 collide_with_areas = true
 

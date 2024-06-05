@@ -1,12 +1,10 @@
-[gd_scene load_steps=33 format=3 uid="uid://c72ubxicxcgwi"]
+[gd_scene load_steps=31 format=3 uid="uid://c72ubxicxcgwi"]
 
 [ext_resource type="Script" path="res://plants/IronDome/IronDome.gd" id="1_8bg66"]
 [ext_resource type="Texture2D" uid="uid://b1loco1l3jord" path="res://plants/peashooter/peashooter_3.png" id="2_aub5j"]
 [ext_resource type="Texture2D" uid="uid://b41e74qvtqnw2" path="res://plants/peashooter/peashooter_0.png" id="3_bqa27"]
 [ext_resource type="Texture2D" uid="uid://dm7yn2eetgim" path="res://plants/peashooter/peashooter_4.png" id="4_4ub0i"]
-[ext_resource type="Texture2D" uid="uid://bc88negpe03w" path="res://plants/peashooter/peashooter_1.png" id="5_q7lbi"]
 [ext_resource type="Texture2D" uid="uid://dfwdejq4lhx8t" path="res://plants/peashooter/peashooter_5.png" id="6_dn1os"]
-[ext_resource type="Texture2D" uid="uid://ddurg1kegxq1c" path="res://plants/peashooter/peashooter_2.png" id="7_5wvye"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ah4b"]
 resource_name = "material_3"
@@ -140,7 +138,6 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("5_q7lbi")
 texture_filter = 0
 texture_repeat = false
 
@@ -224,7 +221,6 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("7_5wvye")
 texture_filter = 0
 texture_repeat = false
 
