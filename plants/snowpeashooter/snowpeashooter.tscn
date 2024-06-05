@@ -539,7 +539,7 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
 
 [node name="head" type="MeshInstance3D" parent="peashooter/head"]
-transform = Transform3D(2, 0, -1.33749e-13, 0, 2, 0, 1.33749e-13, 0, 2, -0.00232097, -0.460754, -0.141054)
+transform = Transform3D(1.75454, 0, 5.68434e-14, 0, 1.75454, 0, -5.68434e-14, 0, 1.75454, -0.00268709, -0.472628, -0.0322463)
 mesh = SubResource("ArrayMesh_nsxij")
 skeleton = NodePath("")
 

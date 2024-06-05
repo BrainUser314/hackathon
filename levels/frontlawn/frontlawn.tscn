@@ -57,7 +57,7 @@
 [ext_resource type="Texture2D" uid="uid://bopfnxuk05ts1" path="res://ui/seed/wnseed/wnseedhover.png" id="55_s5ucb"]
 [ext_resource type="Texture2D" uid="uid://cxaqh8g6duha8" path="res://ui/seed/wnseed/wnseeddisabled.png" id="56_dbv0w"]
 [ext_resource type="Texture2D" uid="uid://i065jubf8p8q" path="res://projectiles/gameover/gameover.png" id="62_0vbwg"]
-[ext_resource type="AudioStream" uid="uid://126ny5w60oof" path="res://music/charbuDarbu.mp3" id="63_3ppis"]
+[ext_resource type="AudioStream" uid="uid://bgc031l02b6tb" path="res://music/charbuDarbu.mp3" id="63_3ppis"]
 [ext_resource type="Texture2D" uid="uid://bobqe4d2k3toh" path="res://ui/shovelnormal.png" id="65_a5qh5"]
 [ext_resource type="Texture2D" uid="uid://d1u4vxlrcenpo" path="res://ui/shovelpressed.png" id="66_mihpy"]
 [ext_resource type="Texture2D" uid="uid://bypmh4vnwfsil" path="res://ui/shovelhover.png" id="67_nh0pe"]
