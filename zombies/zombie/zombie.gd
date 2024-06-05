@@ -24,7 +24,7 @@ func walk():
 	if chilled:
 		ap.speed_scale = 0.25
 	else:
-		ap.speed_scale = 1.0
+		ap.speed_scale = 1.5
 
 func walkforward():
 	translation = Vector3(-0.01, 0, 0)

@@ -53,7 +53,7 @@ collision_mask = 2
 script = ExtResource("1_ts17c")
 
 [node name="pea" type="MeshInstance3D" parent="."]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0.058, -0.265, 0)
+transform = Transform3D(9.98967, -0.225102, 0.143443, 0.388281, 5.86832, -0.121064, -0.236065, 0.126508, 5.871, 0.058, -0.265, 0)
 mesh = SubResource("ArrayMesh_bfrrg")
 skeleton = NodePath("")
 
