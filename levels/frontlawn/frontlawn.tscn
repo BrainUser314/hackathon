@@ -3130,7 +3130,6 @@ wait_time = 3.0
 [node name="RotemCohen" type="AudioStreamPlayer" parent="game_over_timer"]
 stream = ExtResource("3_5q0f5")
 volume_db = 10.306
-stream_paused = true
 
 [connection signal="area_entered" from="gameover" to="player" method="_on_gameover_area_entered"]
 [connection signal="timeout" from="zsp/zsp" to="player" method="_on_zsp_timeout"]

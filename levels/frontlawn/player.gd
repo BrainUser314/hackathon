@@ -161,3 +161,7 @@ func _on_gameover_area_entered(area):
 
 func _on_game_over_timer_timeout():
 		get_tree().quit()
+
+
+func _on_start_btn_pressed():
+	_physics_process(1)
