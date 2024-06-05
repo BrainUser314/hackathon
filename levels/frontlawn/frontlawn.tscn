@@ -1,4 +1,4 @@
-[gd_scene load_steps=226 format=3 uid="uid://dbw6jopdqhemt"]
+[gd_scene load_steps=227 format=3 uid="uid://dbw6jopdqhemt"]
 
 [ext_resource type="Script" path="res://levels/frontlawn/player.gd" id="1_k62ax"]
 [ext_resource type="PackedScene" uid="uid://6767ut83chgm" path="res://ui/tileselect/tileselect.tscn" id="2_vdwpm"]
@@ -57,6 +57,7 @@
 [ext_resource type="Texture2D" uid="uid://bopfnxuk05ts1" path="res://ui/seed/wnseed/wnseedhover.png" id="55_s5ucb"]
 [ext_resource type="Texture2D" uid="uid://cxaqh8g6duha8" path="res://ui/seed/wnseed/wnseeddisabled.png" id="56_dbv0w"]
 [ext_resource type="Texture2D" uid="uid://i065jubf8p8q" path="res://projectiles/gameover/gameover.png" id="62_0vbwg"]
+[ext_resource type="AudioStream" uid="uid://126ny5w60oof" path="res://music/charbuDarbu.mp3" id="63_3ppis"]
 [ext_resource type="Texture2D" uid="uid://bobqe4d2k3toh" path="res://ui/shovelnormal.png" id="65_a5qh5"]
 [ext_resource type="Texture2D" uid="uid://d1u4vxlrcenpo" path="res://ui/shovelpressed.png" id="66_mihpy"]
 [ext_resource type="Texture2D" uid="uid://bypmh4vnwfsil" path="res://ui/shovelhover.png" id="67_nh0pe"]
@@ -3119,6 +3120,10 @@ texture = ExtResource("62_0vbwg")
 
 [node name="game_over_timer" type="Timer" parent="."]
 wait_time = 3.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("63_3ppis")
+autoplay = true
 
 [connection signal="area_entered" from="gameover" to="player" method="_on_gameover_area_entered"]
 [connection signal="timeout" from="zsp/zsp" to="player" method="_on_zsp_timeout"]

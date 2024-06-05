@@ -33,5 +33,6 @@ offset_right = 1425.0
 offset_bottom = 874.0
 stream = ExtResource("2_cmv11")
 autoplay = true
+loop = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
