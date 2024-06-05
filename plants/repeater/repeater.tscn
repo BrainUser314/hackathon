@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://plants/repeater/repeater.gd" id="1_yeitj"]
 [ext_resource type="Texture2D" uid="uid://upefcmameq7h" path="res://plants/repeater/repeater_0.png" id="2_btuvx"]
-[ext_resource type="Texture2D" uid="uid://cy01qhtwfywkf" path="res://plants/repeater/repeater_1.png" id="3_71fx3"]
+[ext_resource type="Texture2D" path="res://plants/repeater/repeater_1.png" id="3_71fx3"]
 [ext_resource type="Texture2D" uid="uid://dekpyjqtojrvr" path="res://plants/repeater/repeater_2.png" id="4_rpn7e"]
 [ext_resource type="Texture2D" uid="uid://6v13qhoctncg" path="res://plants/repeater/repeater_3.png" id="5_luskl"]
 [ext_resource type="Texture2D" uid="uid://biol6u47nlgkk" path="res://plants/repeater/repeater_4.png" id="6_6i8nt"]
@@ -620,6 +620,7 @@ transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 0.08, 0)
 
 [node name="leaf" type="MeshInstance3D" parent="repeater/leaf"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
+visible = false
 mesh = SubResource("ArrayMesh_ehkjf")
 skeleton = NodePath("")
 
@@ -627,26 +628,29 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04, 0.4, 7.45058e-09)
 
 [node name="head2" type="MeshInstance3D" parent="repeater/head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 0)
+transform = Transform3D(1.30349, 0, 7.10543e-14, 0, 1.4897, 0, -1.42109e-13, 0, 1.18711, 0.0935027, -0.560041, -0.150708)
 mesh = SubResource("ArrayMesh_28o2p")
 skeleton = NodePath("")
 
 [node name="head3" type="MeshInstance3D" parent="repeater/head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 0)
+transform = Transform3D(1.28, 0, 0, 0, 1.32, 0, 0, 0, 1.6, 0.183049, -0.535419, -0.1843)
 visible = false
 mesh = SubResource("ArrayMesh_q80iu")
 skeleton = NodePath("")
 
 [node name="headleaf" type="MeshInstance3D" parent="repeater/head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 0)
+visible = false
 mesh = SubResource("ArrayMesh_b0dfg")
 skeleton = NodePath("")
 
 [node name="mouth" type="Node3D" parent="repeater/head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, 2.98023e-08)
+visible = false
 
 [node name="mouth2" type="MeshInstance3D" parent="repeater/head/mouth"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, -0.4, -2.98023e-08)
+visible = false
 mesh = SubResource("ArrayMesh_olm3h")
 skeleton = NodePath("")
 
@@ -657,14 +661,17 @@ skeleton = NodePath("")
 
 [node name="eyebrow" type="Node3D" parent="repeater/head"]
 transform = Transform3D(1, 0, 0, -1.71662e-22, 1, -2.4869e-16, -2.84217e-14, 0, 1, 0.04, 0.08, -7.45058e-09)
+visible = false
 
 [node name="eyebrow" type="MeshInstance3D" parent="repeater/head/eyebrow"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04, -0.48, 7.45058e-09)
+visible = false
 mesh = SubResource("ArrayMesh_ubdob")
 skeleton = NodePath("")
 
 [node name="eyebrow2" type="Node3D" parent="repeater/head"]
 transform = Transform3D(1, 0, 0, -1.71662e-22, 1, -2.4869e-16, -2.84217e-14, 0, 1, -0.16, 0.12, 2.23517e-08)
+visible = false
 
 [node name="eyebrow2" type="MeshInstance3D" parent="repeater/head/eyebrow2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16, -0.52, -2.23517e-08)
