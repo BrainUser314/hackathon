@@ -3071,9 +3071,10 @@ libraries = {
 
 [node name="shovel" type="TextureButton" parent="Control"]
 layout_mode = 0
-offset_left = 981.0
-offset_right = 1077.0
-offset_bottom = 128.0
+offset_left = 795.0
+offset_top = 7.0
+offset_right = 891.0
+offset_bottom = 135.0
 tooltip_text = "Shovel"
 keep_pressed_outside = true
 texture_normal = ExtResource("65_a5qh5")
