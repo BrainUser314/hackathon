@@ -12,7 +12,7 @@ config_version=5
 
 config/name="PvZ GE"
 config/description="Nothing"
-run/main_scene="res://levels/frontlawn/frontlawn.tscn"
+run/main_scene="res://Intro.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://zombies/zombie/zombie_0.png"
 
