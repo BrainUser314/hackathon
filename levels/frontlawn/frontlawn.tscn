@@ -2492,7 +2492,7 @@ shape = SubResource("ConcavePolygonShape3D_xus7m")
 environment = SubResource("Environment_yso18")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="environment"]
-transform = Transform3D(0.868308, -0.19191, 0.457397, -0.303754, 0.523278, 0.796187, -0.392142, -0.830272, 0.396073, 0, 4, 0)
+transform = Transform3D(0.868308, -0.19191, 0.457397, -0.303754, 0.523278, 0.796187, -0.392142, -0.830272, 0.396073, 0, 12.7963, 0)
 light_color = Color(0.984314, 1, 0.67451, 1)
 shadow_enabled = true
 shadow_opacity = 0.88
@@ -3105,7 +3105,7 @@ autowrap_mode = 2
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -40.0
+offset_left = -58.0
 offset_bottom = 23.0
 grow_horizontal = 0
 text = "Level: 1"

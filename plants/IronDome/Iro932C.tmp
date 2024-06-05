@@ -1,10 +1,12 @@
-[gd_scene load_steps=31 format=3 uid="uid://c72ubxicxcgwi"]
+[gd_scene load_steps=33 format=3 uid="uid://c72ubxicxcgwi"]
 
-[ext_resource type="Script" path="res://plants/peashooter/peashooter.gd" id="1_5f2y2"]
-[ext_resource type="Texture2D" uid="uid://b41e74qvtqnw2" path="res://plants/peashooter/peashooter_0.png" id="3_4qc4h"]
-[ext_resource type="Texture2D" uid="uid://b1loco1l3jord" path="res://plants/peashooter/peashooter_3.png" id="6_hy1yk"]
-[ext_resource type="Texture2D" uid="uid://dm7yn2eetgim" path="res://plants/peashooter/peashooter_4.png" id="7_2feb1"]
-[ext_resource type="Texture2D" uid="uid://dfwdejq4lhx8t" path="res://plants/peashooter/peashooter_5.png" id="8_5eukg"]
+[ext_resource type="Script" path="res://plants/IronDome/IronDome.gd" id="1_8bg66"]
+[ext_resource type="Texture2D" uid="uid://b1loco1l3jord" path="res://plants/peashooter/peashooter_3.png" id="2_aub5j"]
+[ext_resource type="Texture2D" uid="uid://b41e74qvtqnw2" path="res://plants/peashooter/peashooter_0.png" id="3_bqa27"]
+[ext_resource type="Texture2D" uid="uid://dm7yn2eetgim" path="res://plants/peashooter/peashooter_4.png" id="4_4ub0i"]
+[ext_resource type="Texture2D" uid="uid://bc88negpe03w" path="res://plants/peashooter/peashooter_1.png" id="5_q7lbi"]
+[ext_resource type="Texture2D" uid="uid://dfwdejq4lhx8t" path="res://plants/peashooter/peashooter_5.png" id="6_dn1os"]
+[ext_resource type="Texture2D" uid="uid://ddurg1kegxq1c" path="res://plants/peashooter/peashooter_2.png" id="7_5wvye"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ah4b"]
 resource_name = "material_3"
@@ -12,7 +14,7 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("6_hy1yk")
+albedo_texture = ExtResource("2_aub5j")
 texture_filter = 0
 texture_repeat = false
 
@@ -54,7 +56,7 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("3_4qc4h")
+albedo_texture = ExtResource("3_bqa27")
 texture_filter = 0
 texture_repeat = false
 
@@ -96,7 +98,7 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("7_2feb1")
+albedo_texture = ExtResource("4_4ub0i")
 texture_filter = 0
 texture_repeat = false
 
@@ -138,6 +140,7 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
+albedo_texture = ExtResource("5_q7lbi")
 texture_filter = 0
 texture_repeat = false
 
@@ -179,7 +182,7 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("8_5eukg")
+albedo_texture = ExtResource("6_dn1os")
 texture_filter = 0
 texture_repeat = false
 
@@ -221,6 +224,7 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
+albedo_texture = ExtResource("7_5wvye")
 texture_filter = 0
 texture_repeat = false
 
@@ -516,8 +520,8 @@ _data = {
 "shoot": SubResource("Animation_ekaeo")
 }
 
-[node name="Peashooter" type="StaticBody3D" groups=["plant", "selectable"]]
-script = ExtResource("1_5f2y2")
+[node name="IronDome" type="StaticBody3D" groups=["plant", "selectable"]]
+script = ExtResource("1_8bg66")
 
 [node name="peashooter" type="Node3D" parent="."]
 transform = Transform3D(-2.5, 0, 3.77489e-07, 0, 2.5, 0, -3.77489e-07, 0, -2.5, 0, 0, 0.1)
@@ -526,7 +530,7 @@ transform = Transform3D(-2.5, 0, 3.77489e-07, 0, 2.5, 0, -3.77489e-07, 0, -2.5, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
 
 [node name="leaf" type="MeshInstance3D" parent="peashooter/leaf"]
-transform = Transform3D(-2.23406, 0, 0.0642371, 0, 2.23499, 0, -0.0642371, 0, -2.23406, 0, -0.08, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
 mesh = SubResource("ArrayMesh_h71gb")
 skeleton = NodePath("")
 
@@ -534,12 +538,12 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
 
 [node name="head" type="MeshInstance3D" parent="peashooter/head"]
-transform = Transform3D(-1.13978, -0.040299, -0.180658, -0.0431557, 1.15381, 0.0148942, 0.179997, 0.0214534, -1.1404, 0.0794064, -0.161816, -0.0395067)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 0)
 mesh = SubResource("ArrayMesh_kuf4h")
 skeleton = NodePath("")
 
 [node name="head2" type="MeshInstance3D" parent="peashooter/head"]
-transform = Transform3D(0.889634, -0.0293564, 6.59952e-11, 0.0278491, 0.937785, -4.19773e-09, 6.55831e-11, 4.4327e-09, 0.888513, -0.0393103, -0.109644, 0.103902)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 0)
 visible = false
 mesh = SubResource("ArrayMesh_elr2c")
 skeleton = NodePath("")
@@ -548,13 +552,12 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0.2, 2.98023e-08)
 
 [node name="mouth" type="MeshInstance3D" parent="peashooter/head/mouth"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0909501, -0.222586, 0.175671)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, -0.4, -2.98023e-08)
 mesh = SubResource("ArrayMesh_hqspu")
 skeleton = NodePath("")
 
 [node name="mouth2" type="MeshInstance3D" parent="peashooter/head/mouth"]
-transform = Transform3D(1.99072, -0.0612234, 0.0817416, 0.111713, 0.989468, 0.0855186, -0.156666, -0.0723985, 1.09965, 0.202248, -0.235021, 0.0731214)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, -0.4, -2.98023e-08)
 visible = false
 mesh = SubResource("ArrayMesh_3e2gp")
 skeleton = NodePath("")
@@ -564,7 +567,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.165, 0.325, 0)
 
 [node name="headleaf" type="MeshInstance3D" parent="peashooter/head/headleaf"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16, -0.52, 1.49012e-08)
-visible = false
 mesh = SubResource("ArrayMesh_rut3v")
 skeleton = NodePath("")
 
@@ -573,8 +575,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
 shape = SubResource("BoxShape3D_cbeln")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 2.52, 0)
-target_position = Vector3(8, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 1, 0)
+target_position = Vector3(16, 0, 0)
 collision_mask = 2
 collide_with_areas = true
 
