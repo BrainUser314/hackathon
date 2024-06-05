@@ -1,14 +1,14 @@
 [gd_scene load_steps=41 format=3 uid="uid://dcr3wsinvu0nu"]
 
 [ext_resource type="Script" path="res://plants/repeater/repeater.gd" id="1_yeitj"]
-[ext_resource type="Texture2D" uid="uid://upefcmameq7h" path="res://plants/repeater/repeater_0.png" id="2_btuvx"]
-[ext_resource type="Texture2D" uid="uid://cy01qhtwfywkf" path="res://plants/repeater/repeater_1.png" id="3_71fx3"]
-[ext_resource type="Texture2D" uid="uid://dekpyjqtojrvr" path="res://plants/repeater/repeater_2.png" id="4_rpn7e"]
-[ext_resource type="Texture2D" uid="uid://6v13qhoctncg" path="res://plants/repeater/repeater_3.png" id="5_luskl"]
-[ext_resource type="Texture2D" uid="uid://biol6u47nlgkk" path="res://plants/repeater/repeater_4.png" id="6_6i8nt"]
-[ext_resource type="Texture2D" uid="uid://wgpnb65200dl" path="res://plants/repeater/repeater_5.png" id="7_qtgqv"]
-[ext_resource type="Texture2D" uid="uid://cu6nqowr0s1jt" path="res://plants/repeater/repeater_6.png" id="8_31k2l"]
-[ext_resource type="Texture2D" uid="uid://ciiejl3uwt7m5" path="res://plants/repeater/repeater_7.png" id="9_fjoic"]
+[ext_resource type="Texture2D" uid="uid://cl3bqfql6kgbh" path="res://plants/repeater/repeater_0.png" id="2_btuvx"]
+[ext_resource type="Texture2D" uid="uid://cu8th35r8dil3" path="res://plants/repeater/repeater_1.png" id="3_71fx3"]
+[ext_resource type="Texture2D" uid="uid://5u43jat5urgq" path="res://plants/repeater/repeater_2.png" id="4_rpn7e"]
+[ext_resource type="Texture2D" uid="uid://bj72vvkunbesq" path="res://plants/repeater/repeater_3.png" id="5_luskl"]
+[ext_resource type="Texture2D" uid="uid://p24qqlq3uetg" path="res://plants/repeater/repeater_4.png" id="6_6i8nt"]
+[ext_resource type="Texture2D" uid="uid://bu3153g8vym7e" path="res://plants/repeater/repeater_5.png" id="7_qtgqv"]
+[ext_resource type="Texture2D" uid="uid://06rq56d0dduq" path="res://plants/repeater/repeater_6.png" id="8_31k2l"]
+[ext_resource type="Texture2D" uid="uid://b4g3lyi5us0oq" path="res://plants/repeater/repeater_7.png" id="9_fjoic"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wfxfw"]
 resource_name = "material_2"
