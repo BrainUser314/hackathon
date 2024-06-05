@@ -1,9 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://cquihys8mss8l"]
+[gd_scene load_steps=18 format=3 uid="uid://cquihys8mss8l"]
 
 [ext_resource type="Script" path="res://plants/sunflower/sunflower.gd" id="1_2xlnt"]
 [ext_resource type="Texture2D" uid="uid://dkus7cqaolgxw" path="res://plants/sunflower/sunflower_0.png" id="3_a3jux"]
-[ext_resource type="Texture2D" uid="uid://b6k336oj8l8mp" path="res://plants/sunflower/sunflower_1.png" id="4_en8jh"]
-[ext_resource type="Texture2D" path="res://plants/sunflower/sunflower_2.png" id="5_rop7n"]
+[ext_resource type="Texture2D" uid="uid://b4phi0miowms1" path="res://plants/sunflower/sunflower_2.png" id="5_rop7n"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_56mvp"]
 size = Vector3(2, 0.1, 2)
@@ -173,7 +172,6 @@ transparency = 2
 alpha_scissor_threshold = 0.05
 alpha_antialiasing_mode = 0
 cull_mode = 2
-albedo_texture = ExtResource("4_en8jh")
 texture_filter = 0
 texture_repeat = false
 
@@ -276,7 +274,7 @@ transform = Transform3D(-2.5, 0, 3.57628e-07, 0, 2.5, 0, -3.57628e-07, 0, -2.5, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
 
 [node name="leaf" type="MeshInstance3D" parent="sunflower/leaf"]
-transform = Transform3D(-2.26225, -0.0542182, -0.58045, -0.0675982, 4.97092, 0.264181, 0.453351, 0.470651, -2.8571, -0.0649736, -0.339934, -0.217266)
+transform = Transform3D(-2.26225, -0.0542182, -0.58045, -0.0675982, 4.97092, 0.264181, 0.453351, 0.470651, -2.8571, -0.0320656, -0.134852, -0.107579)
 lod_bias = 40.961
 mesh = SubResource("ArrayMesh_21e3e")
 skeleton = NodePath("")
