@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://g1aa05xvdd1o"]
+[gd_scene load_steps=5 format=3 uid="uid://dsasfj71j175r"]
 
 [ext_resource type="Script" path="res://intro_screen.gd" id="1_iet7x"]
+[ext_resource type="Texture2D" uid="uid://bgxhasxlc50cd" path="res://intro/startIMG.jpg" id="2_hqfad"]
 [ext_resource type="VideoStream" path="res://intro/OctoberRainGame.ogv" id="2_kvqr2"]
-[ext_resource type="AudioStream" uid="uid://met21kcsg6ev" path="res://music/Eden Golan - Hurricane.mp3" id="3_q3rxt"]
+[ext_resource type="AudioStream" uid="uid://due6p1npxs8t5" path="res://music/Eden Golan - Hurricane.mp3" id="3_q3rxt"]
 
 [node name="IntroScreen" type="Control"]
 layout_mode = 3
@@ -23,11 +24,12 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.027
 anchor_top = -0.017
-offset_left = 1091.88
-offset_top = 34.3
-offset_right = 1428.0
-offset_bottom = 612.0
-text = "START TO PLAY"
+offset_left = 1071.88
+offset_top = 27.3
+offset_right = 1733.0
+offset_bottom = 1008.0
+icon = ExtResource("2_hqfad")
+icon_alignment = 1
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
 layout_mode = 1
