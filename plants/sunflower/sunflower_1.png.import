@@ -2,27 +2,30 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6k336oj8l8mp"
-path="res://.godot/imported/sunflower_1.png-cb5b577f96dfbf20cf8b4f8d0985af2e.ctex"
+uid="uid://bbrbebocqq86c"
+path.s3tc="res://.godot/imported/sunflower_1.png-cb5b577f96dfbf20cf8b4f8d0985af2e.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
-generator_parameters={}
+generator_parameters={
+"md5": "98eb0631c131804ebcde89646392e4b8"
+}
 
 [deps]
 
 source_file="res://plants/sunflower/sunflower_1.png"
-dest_files=["res://.godot/imported/sunflower_1.png-cb5b577f96dfbf20cf8b4f8d0985af2e.ctex"]
+dest_files=["res://.godot/imported/sunflower_1.png-cb5b577f96dfbf20cf8b4f8d0985af2e.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
