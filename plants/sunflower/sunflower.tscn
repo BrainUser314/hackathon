@@ -264,7 +264,7 @@ autoplay = "idle"
 playback_default_blend_time = 0.5
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 12.0
+wait_time = 9.0
 autostart = true
 
 [node name="sunflower" type="Node3D" parent="."]
