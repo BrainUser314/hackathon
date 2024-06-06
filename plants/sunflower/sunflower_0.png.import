@@ -2,12 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkus7cqaolgxw"
+uid="uid://tbas4e4clnrj"
 path="res://.godot/imported/sunflower_0.png-afab5668bd318fc0cf13c654f80a4fa1.ctex"
 metadata={
 "vram_texture": false
 }
-generator_parameters={}
 
 [deps]
 
@@ -32,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
