@@ -31,7 +31,7 @@ func walk():
 		ap.speed_scale = 1.0
 
 func walkforward():
-	translation = Vector3(-0.05, 0, 0)
+	translation = Vector3(-0.01, 0, 0)
 
 func stopwalk():
 	translation = Vector3(0, 0, 0)

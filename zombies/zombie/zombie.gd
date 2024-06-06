@@ -1,6 +1,6 @@
 extends StaticBody3D
 
-var health = 100
+var health = 50
 var damage = 5
 var translation = Vector3(-0.005,0,0)
 var gbody
@@ -9,7 +9,7 @@ var head_can_detach = true
 var arm = preload("res://zombies/zombiearm.tscn")
 var head = preload("res://zombies/zombie/zombiehead.tscn")
 var chilled = false
-
+var movement = 0.010
 @onready var ap = $AnimationPlayer
 
 func _physics_process(delta):
@@ -22,12 +22,12 @@ func _physics_process(delta):
 func walk():
 	ap.play("walk")
 	if chilled:
-		ap.speed_scale = 0.25
+		ap.speed_scale = 0.25*movement*100
 	else:
-		ap.speed_scale = 1.5
+		ap.speed_scale = movement*100
 
 func walkforward():
-	translation = Vector3(-0.1, 0, 0)
+	translation = Vector3(-movement, 0, 0)
 
 func stopwalk():
 	translation = Vector3(0, 0, 0)

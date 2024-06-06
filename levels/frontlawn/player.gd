@@ -1,6 +1,6 @@
 extends Camera3D
 
-var sun = 1000
+var sun = 500
 var result
 var wn = preload("res://plants/wallnut/wallnut.tscn")
 var ps = preload("res://plants/peashooter/peashooter.tscn")
@@ -17,7 +17,7 @@ var gameover = preload("res://projectiles/gameover/gameover.tscn")
 
 var globalTime = 0
 var level = 1
-var levelDuration = 15
+var levelDuration = 60
 const raylength = 1000
 
 @onready var level_label = $"../LevelLabel"
@@ -126,13 +126,22 @@ func _on_zsp_timeout():
 	
 	var randomIndexDrone = randi() % zsp.size()
 	var spawnPositionDrone = zsp[randomIndexDrone].global_transform.origin
+	if level >= 2:
+		var drone_instance = drone.instantiate()
+		drone_instance.position = spawnPositionDrone
+		if level>=5:
+			drone_instance.health += 75
+		get_tree().get_root().add_child(drone_instance)
 	
-	var drone_instance = drone.instantiate()
-	drone_instance.position = spawnPositionDrone
-	get_tree().get_root().add_child(drone_instance)
 	
 	var z1a = z1.instantiate()
 	z1a.position = spawnPosition
+	if level>=5:
+		z1a.health += 75
+	if level>=3:
+		z1a.damage = 7
+	if level>=6:
+		z1a.movement = 0.015
 	get_tree().get_root().add_child(z1a)
 	
 
@@ -140,7 +149,11 @@ func _on_zsp_timeout():
 	randomize_timer()
 
 func randomize_timer():
-	var randomInterval = randi_range(1.0, 35.0 - level * 35/100)
+	var randomInterval
+	if level >= 4:
+		randomInterval = randi_range(1.0, 7)
+	else:
+		randomInterval = randi_range(1.0, 17)
 	$"../zsp/zsp".wait_time = randomInterval
 
 func _on_sspt_timeout():

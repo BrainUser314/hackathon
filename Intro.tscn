@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Intro.gd" id="1_4hi66"]
 [ext_resource type="VideoStream" path="res://intro/OctoberRainGame.ogv" id="2_cmv11"]
-[ext_resource type="AudioStream" uid="uid://boqw8tcgric34" path="res://music/Eden Golan - Hurricane.mp3" id="2_ofjp5"]
-[ext_resource type="Texture2D" uid="uid://bfh4yape7dden" path="res://intro/startIMG.jpg" id="3_ehgke"]
+[ext_resource type="AudioStream" uid="uid://cr1kem6g4jpo2" path="res://music/Eden Golan - Hurricane.mp3" id="2_ofjp5"]
+[ext_resource type="Texture2D" uid="uid://bmirb3c8ricca" path="res://intro/startIMG.jpg" id="3_ehgke"]
 
 [node name="Intro" type="Control"]
 layout_mode = 3
