@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccx1v2po6yusu"
-path="res://.godot/imported/sfseednormal - Copy.png-870e926685f5f63bf436d861307965ae.ctex"
+uid="uid://g0ytwpixubpe"
+path="res://.godot/imported/sfseednormal - Copy.PNG-0e3d72c95e163c8b066bb6fd5719bb78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/seed/sfseed/sfseednormal - Copy.png"
-dest_files=["res://.godot/imported/sfseednormal - Copy.png-870e926685f5f63bf436d861307965ae.ctex"]
+source_file="res://ui/seed/sfseed/sfseednormal - Copy.PNG"
+dest_files=["res://.godot/imported/sfseednormal - Copy.PNG-0e3d72c95e163c8b066bb6fd5719bb78.ctex"]
 
 [params]
 

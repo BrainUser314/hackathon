@@ -32,10 +32,10 @@
 [ext_resource type="Texture2D" uid="uid://bax043idsxlpf" path="res://levels/frontlawn/frontlawn_18.png" id="30_k3j5s"]
 [ext_resource type="Texture2D" uid="uid://dnaxp2bxurxbm" path="res://levels/frontlawn/frontlawn_24.png" id="31_o55e8"]
 [ext_resource type="Texture2D" uid="uid://bn0gbgg5ama7v" path="res://levels/frontlawn/frontlawn_25.png" id="32_bxf1c"]
-[ext_resource type="Texture2D" uid="uid://bv2udymv461mr" path="res://ui/seed/sfseed/sfseednormal.png" id="33_te0p3"]
-[ext_resource type="Texture2D" uid="uid://bfiunf6biuufy" path="res://ui/seed/sfseed/sfseedpressed.png" id="34_ldofb"]
-[ext_resource type="Texture2D" uid="uid://ckqbkw6hfy28h" path="res://ui/seed/sfseed/sfseedhover.png" id="35_xyad2"]
-[ext_resource type="Texture2D" uid="uid://g6xkfdeu0t0o" path="res://ui/seed/sfseed/sfseeddisabled.png" id="36_ds4al"]
+[ext_resource type="Texture2D" uid="uid://quyka6vm0yum" path="res://ui/seed/sfseed/sfseednormal.png" id="33_te0p3"]
+[ext_resource type="Texture2D" uid="uid://b4cs547lqngb" path="res://ui/seed/sfseed/sfseedpressed.png" id="34_ldofb"]
+[ext_resource type="Texture2D" uid="uid://bgb8ggbgwh27t" path="res://ui/seed/sfseed/sfseedhover.png" id="35_xyad2"]
+[ext_resource type="Texture2D" uid="uid://befhf8r6himqv" path="res://ui/seed/sfseed/sfseeddisabled.png" id="36_ds4al"]
 [ext_resource type="Texture2D" uid="uid://dh6pyan2h3ka7" path="res://ui/seed/psseed/psseednormal.png" id="37_sibaw"]
 [ext_resource type="Texture2D" uid="uid://ufvgqse8jgsx" path="res://ui/seed/psseed/psseedpressed.png" id="38_agny6"]
 [ext_resource type="Texture2D" uid="uid://c21bi7my07iiu" path="res://ui/seed/psseed/psseedhover.png" id="39_blmup"]
@@ -2962,7 +2962,7 @@ offset_bottom = 40.0
 layout_mode = 2
 offset_left = 322.0
 offset_right = 422.0
-offset_bottom = 140.0
+offset_bottom = 164.0
 tooltip_text = "Biden contribution"
 keep_pressed_outside = true
 texture_normal = ExtResource("33_te0p3")
