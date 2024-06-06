@@ -57,7 +57,7 @@
 [ext_resource type="Texture2D" uid="uid://bopfnxuk05ts1" path="res://ui/seed/wnseed/wnseedhover.png" id="55_s5ucb"]
 [ext_resource type="Texture2D" uid="uid://cxaqh8g6duha8" path="res://ui/seed/wnseed/wnseeddisabled.png" id="56_dbv0w"]
 [ext_resource type="Texture2D" uid="uid://i065jubf8p8q" path="res://projectiles/gameover/gameover.png" id="62_0vbwg"]
-[ext_resource type="AudioStream" uid="uid://orlhp8cq5a38" path="res://music/charbuDarbu.mp3" id="63_3ppis"]
+[ext_resource type="AudioStream" uid="uid://di7lyhfcm626i" path="res://music/charbuDarbu.mp3" id="63_3ppis"]
 [ext_resource type="Texture2D" uid="uid://cbi1o3vfxg0kb" path="res://ui/shovelnormal.png" id="65_a5qh5"]
 [ext_resource type="Texture2D" uid="uid://bswr3ljrv6uo6" path="res://ui/shovelpressed.png" id="66_mihpy"]
 [ext_resource type="Texture2D" uid="uid://l8iifjwdxvd1" path="res://ui/shovelhover.png" id="67_nh0pe"]
@@ -2129,10 +2129,10 @@ tracks/0/path = NodePath(".:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 24),
-"transitions": PackedFloat32Array(-2, -2),
+"times": PackedFloat32Array(0, 8, 24),
+"transitions": PackedFloat32Array(-2, 1, -2),
 "update": 1,
-"values": [true, false]
+"values": [true, false, false]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -2141,10 +2141,10 @@ tracks/1/path = NodePath(".:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 24),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 8, 24),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(322, 16), Vector2(322, 0)]
+"values": [Vector2(322, 16), Vector2(322, 0), Vector2(322, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_unjc3"]

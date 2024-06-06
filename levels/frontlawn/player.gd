@@ -1,6 +1,6 @@
 extends Camera3D
 
-var sun = 500
+var sun = 200
 var result
 var wn = preload("res://plants/wallnut/wallnut.tscn")
 var ps = preload("res://plants/peashooter/peashooter.tscn")
@@ -44,7 +44,7 @@ func _physics_process(delta):
 
 	if result:
 		if Input.is_action_just_pressed("leftclick") and result.collider.is_in_group("normalsun"):
-			sun += 25
+			sun += 35
 			result.collider.queue_free()
 		if result.collider.is_in_group("tile") or result.collider.is_in_group("selectable"):
 			ts.show()
