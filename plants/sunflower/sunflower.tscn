@@ -260,7 +260,7 @@ shape = SubResource("BoxShape3D_56mvp")
 libraries = {
 "": SubResource("AnimationLibrary_65ri3")
 }
-autoplay = "RESET"
+autoplay = "idle"
 playback_default_blend_time = 0.5
 
 [node name="Timer" type="Timer" parent="."]

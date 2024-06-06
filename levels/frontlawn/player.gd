@@ -17,7 +17,7 @@ var gameover = preload("res://projectiles/gameover/gameover.tscn")
 
 var globalTime = 0
 var level = 1
-var levelDuration = 60
+var levelDuration = 35
 const raylength = 1000
 
 @onready var level_label = $"../LevelLabel"
@@ -44,7 +44,7 @@ func _physics_process(delta):
 
 	if result:
 		if Input.is_action_just_pressed("leftclick") and result.collider.is_in_group("normalsun"):
-			sun += 35
+			sun += 30
 			result.collider.queue_free()
 		if result.collider.is_in_group("tile") or result.collider.is_in_group("selectable"):
 			ts.show()
